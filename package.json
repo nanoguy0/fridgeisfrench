@@ -1,0 +1,17 @@
+{
+  "name": "fridgebackend",
+  "version": "1.0.0",
+  "description": "A backend controller ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Benjamin Bartrim",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "flexsearch": "^0.6.32",
+    "knex": "^0.21.18",
+    "sqlite3": "^5.0.2"
+  }
+}
