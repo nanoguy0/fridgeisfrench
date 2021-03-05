@@ -89,7 +89,7 @@ module.exports = {
 };
 
 // (async function test() {
-	// // testing cache
-  // console.log(await module.exports._metaData());
-	// require('fs').writeFileSync('db.json', JSON.stringify(await module.exports._metaData()))
+// 	// testing cache
+//   console.log(await module.exports.searchMeal('Eggs'));
+// 	// require('fs').writeFileSync('db.json', JSON.stringify(await module.exports._metaData()))
 // })();
