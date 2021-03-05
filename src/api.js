@@ -1,6 +1,12 @@
 // This file manages all api resources
 const express = require("express");
-const knex = require("knex")({});
+const knex = require("knex")({
+	client: 'sqlite3',
+	connection: {
+    filename: "./db.sqlite"
+  },
+	useNullAsDefault: true
+});
 
 // Run setup on database init
 require("./database")(knex);
@@ -26,37 +32,41 @@ router
         (typeof req.query.name != "string" || req.query.name.length == 0)
       )
         return sendBadRequest("Name must be a valid string", res);
-      else req.query.name = req.query.name.trim().toLowerCase();
+      else if (req.query.name) req.query.name = req.query.name.trim().toLowerCase();
       if (
         req.query.unit &&
         (typeof req.query.unit != "string" || req.query.unit.length == 0)
       )
         return sendBadRequest("Unit must be a valid string", res);
-      else req.query.unit = req.query.unit.trim().toLowerCase();
+      else if (req.query.unit) req.query.unit = req.query.unit.trim().toLowerCase();
       if (req.query.count && Number.isNaN(Number(req.query.count)))
         return sendBadRequest("Count must be a valid number", res);
-      else req.query.count = Number(req.query.count);
+      else if (req.query.count) req.query.count = Number(req.query.count);
       if (req.query.from && Number.isNaN(Number(req.query.from)))
         return sendBadRequest("From must be a valid number", res);
-      else req.query.from = Number(req.query.from);
+      else if (req.query.from) req.query.from = Number(req.query.from);
       if (req.query.to && Number.isNaN(Number(req.query.to)))
         return sendBadRequest("To must be a valid number", res);
-      else req.query.to = Number(req.query.to);
+      else if (req.query.to) req.query.to = Number(req.query.to);
 
       // Create Knex search query
       var search = {};
-      if (req.query.name) search.name = req.query.name;
+      // if (req.query.name) search.name = req.query.name;
       if (req.query.unit) search.unit = req.query.unit;
       if (req.query.count) search.ammount = req.query.count;
 
       // Knex query
-      var results = await knex("ingredients")
+      var results = knex("ingredients")
         .select()
         .where(search)
         .whereBetween("expiry_date", [
           req.query.from || 0,
           req.query.to || Date.now(),
         ]);
+
+			if (req.query.name) results.where('name', 'like', `%${req.query.name}%`);
+
+			results = await results;
       // Format results based on docs
       var formatted = (results || []).map(function (value) {
         return {
@@ -93,7 +103,7 @@ router
         req.body.name.length == 0
       )
         return sendBadRequest("Name must be a valid string", res);
-      else req.body.name = req.body.name.trim().toLowerCase();
+      else if (req.body.name) req.body.name = req.body.name.trim().toLowerCase();
       if (req.body.count) {
         if (typeof req.body.count != "object")
           return sendBadRequest("Count must be a valid object", res);
@@ -102,24 +112,24 @@ router
           Number.isNaN(Number(req.body.count.number))
         )
           return sendBadRequest("Number must be a valid number", res);
-        else req.body.count.number = Number(req.body.count.number);
+        else if ( req.body.count.number) req.body.count.number = Number(req.body.count.number);
         if (
           req.body.count.unit &&
           (typeof req.body.count.unit != "string" ||
             req.body.count.unit.length == 0)
         )
           return sendBadRequest("Unit must be a valid string", res);
-        else req.body.count.unit = req.body.count.unit.trim().toLowerCase();
+        else if (req.body.count.unit) req.body.count.unit = req.body.count.unit.trim().toLowerCase();
       } else req.body.count = {};
       if (req.body.expiry_date && Number.isNaN(Number(req.body.expiry_date)))
         return sendBadRequest("Expiry Date must be a valid number", res);
-      else req.body.expiry_date = Number(req.body.expiry_date);
+      else if (req.body.expiry_date) req.body.expiry_date = Number(req.body.expiry_date);
       if (
         req.body.icon &&
         (typeof req.body.icon != "string" || req.body.icon.length == 0)
       )
         return sendBadRequest("Icon must be a valid string", res);
-      else req.body.icon = req.body.icon.trim().toLowerCase();
+      else if (req.body.icon) req.body.icon = req.body.icon.trim();
 
       // Check if the ingredient exists
       var ingredient = (
@@ -137,7 +147,7 @@ router
               icon: req.body.icon || ingredient.icon,
             })
             .where("name", "=", req.body.name)
-            .returning("*")
+            // .returning("*")
         )[0];
       } else {
         // Create the ingredient
@@ -150,13 +160,16 @@ router
               expiry_date: req.body.expiry_date || -1,
               icon: req.body.icon || "",
             })
-            .returning("*")
+            // .returning("*")
         )[0];
       }
 
-      req.json({
+			ingredient = (
+        await knex("ingredients").select().where("name", "=", req.body.name)
+      )[0];
+      res.json({
         ingredients: [
-          {
+          (ingredient) ? {
             name: ingredient.name,
             count: {
               number: ingredient.ammount,
@@ -164,7 +177,7 @@ router
             },
             expiry_date: ingredient.expiry_date,
             icon: ingredient.icon,
-          },
+          }: {},
         ],
       });
     } catch (error) {

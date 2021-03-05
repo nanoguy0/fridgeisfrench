@@ -9,5 +9,5 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use('/', require('./src/api'));
 
-server.listen(80);
-console.log('Now listening for inncoming connections');
+server.listen(8080);
+console.log('Now listening for incoming connections');
