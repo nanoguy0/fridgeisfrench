@@ -8,6 +8,7 @@ var server = http.createServer(app);
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use('/', require('./src/api'));
+app.use(express.static('public'))
 
 server.listen(8080);
 console.log('Now listening for incoming connections');

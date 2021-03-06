@@ -1,0 +1,1702 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Bebas+Neue:400");
+
+@font-face {
+  font-family: "Calibri-Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("https://fonts.animaapp.com/Calibri-Bold") format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+}
+.bebasneue-normal-black-19px {
+  color: black;
+  font-family: "Bebas Neue", Helvetica;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+}
+.bebasneue-normal-black-22px {
+  color: black;
+  font-family: "Bebas Neue", Helvetica;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+}
+.bebasneue-normal-black-35px {
+  color: black;
+  font-family: "Bebas Neue", Helvetica;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+}
+.bebasneue-normal-black-45px {
+  color: black;
+  font-family: "Bebas Neue", Helvetica;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 400;
+}
+.calibri-bold-gray-40px {
+  color: rgba(145, 145, 145, 1);
+  font-family: "Calibri-Bold", Helvetica;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+}
+.produce {
+  background-color: white;
+  height: 823px;
+  position: relative;
+  width: 1024px;
+}
+.produce .auto-flex {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  min-height: 214px;
+  width: 146px;
+}
+.produce .auto-flex-1 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin-left: 28px;
+  min-height: 214px;
+  width: 146px;
+}
+.produce .auto-flex-2 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  min-height: 79px;
+  width: 63px;
+}
+.produce .auto-flex5 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  min-height: 79px;
+  width: 66px;
+}
+.produce .bg {
+  background-color: var(--star-dust);
+  height: 600px;
+  left: 0px;
+  position: fixed;
+  top: 0px;
+  width: 1024px;
+}
+.produce .bg-1 {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.161);
+  height: 93px;
+  left: 0px;
+  opacity: 0.75;
+  position: absolute;
+  top: 0px;
+  width: 146px;
+}
+.produce .bg-2 {
+  background-color: black;
+  border-radius: 10px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.161);
+  height: 93px;
+  left: 705px;
+  opacity: 0.27;
+  position: absolute;
+  top: 127px;
+  width: 146px;
+}
+.produce .bg-3 {
+  background-color: black;
+  border-radius: 10px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.161);
+  height: 93px;
+  left: 531px;
+  opacity: 0.27;
+  position: absolute;
+  top: 127px;
+  width: 146px;
+}
+.produce .bowl {
+  height: 33px;
+  margin-left: 0.02px;
+  margin-top: 45px;
+  opacity: 0.25;
+  position: relative;
+  width: 36px;
+}
+.produce .broccoli {
+  align-items: flex-end;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: -0px;
+  min-width: 52px;
+}
+.produce .cover-bar-dark-grey {
+  background-color: var(--star-dust);
+  height: 5px;
+  width: 1024px;
+}
+.produce .cover-bar-grey {
+  align-self: flex-end;
+  background: linear-gradient(180deg, #ececec 0%, #ececec 71.96%, rgba(236, 236, 236, 0) 100%);
+  border-radius: 32px;
+  height: 122px;
+  margin-right: 21px;
+  width: 916px;
+}
+.produce .cover-bar-white {
+  background-color: white;
+  border-radius: 32px;
+  height: 7px;
+  margin-left: 42px;
+  width: 916px;
+}
+.produce .cover-bar-white-bottom {
+  background-color: white;
+  border-radius: 32px;
+  height: 7px;
+  margin-left: 62px;
+  margin-top: 454px;
+  width: 894px;
+}
+.produce .cover-bars {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  left: 0px;
+  min-height: 600px;
+  position: fixed;
+  top: 0px;
+  width: 1024px;
+}
+.produce .ellipse-387 {
+  background-color: var(--fire-bush);
+  border-radius: 1.448065996170044px;
+  height: 3px;
+  left: 11px;
+  position: absolute;
+  top: 32px;
+  width: 3px;
+}
+.produce .ellipse-388 {
+  background-color: var(--fire-bush);
+  border-radius: 1.448065996170044px;
+  height: 3px;
+  left: 15px;
+  position: absolute;
+  top: 29px;
+  width: 3px;
+}
+.produce .ellipse-389 {
+  background-color: var(--fire-bush);
+  border-radius: 1.448065996170044px;
+  height: 3px;
+  left: 16px;
+  position: absolute;
+  top: 35px;
+  width: 3px;
+}
+.produce .ellipse-390 {
+  background-color: rgba(65, 92, 206, 1);
+  border-radius: 15.63752555847168px;
+  height: 31px;
+  left: 19px;
+  position: absolute;
+  top: 19px;
+  width: 31px;
+}
+.produce .ellipse-393 {
+  background-color: var(--oxford-blue);
+  border-radius: 2.1968984603881836px;
+  height: 4px;
+  left: -7px;
+  position: absolute;
+  top: 19px;
+  width: 4px;
+}
+.produce .grid {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  left: 0px;
+  min-height: 337px;
+  position: absolute;
+  top: 0px;
+  width: 862px;
+}
+.produce .group-326 {
+  align-items: flex-end;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 0.02px;
+  margin-top: 44px;
+  min-width: 36px;
+}
+.produce .group-529 {
+  align-items: flex-start;
+  display: flex;
+  height: 8px;
+  left: 19px;
+  min-width: 9px;
+  position: absolute;
+  top: 24px;
+}
+.produce .header {
+  align-items: flex-start;
+  display: flex;
+  height: 64px;
+  left: 104px;
+  min-width: 840px;
+  position: fixed;
+  top: 40px;
+}
+.produce .header-1 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  left: 0px;
+  min-height: 64px;
+  position: absolute;
+  top: 60px;
+  width: 840px;
+}
+.produce .house {
+  align-items: flex-start;
+  display: flex;
+  justify-content: center;
+  min-width: 36px;
+  opacity: 0.25;
+}
+.produce .inner-square {
+  background-color: var(--cararra);
+  border-radius: 32px;
+  height: 576px;
+  left: 75px;
+  position: fixed;
+  top: 12px;
+  width: 939px;
+}
+.produce .invoice {
+  align-items: flex-start;
+  background-image: url(https://anima-uploads.s3.amazonaws.com/projects/603fed2c1ade8617800e613e/releases/603fed5b179367c8bbc15e0e/img/path-2241-1@1x.png);
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 45px;
+  min-height: 47px;
+  opacity: 0.25;
+  padding: 15.9px 6.4px;
+  width: 36px;
+}
+.produce .mask-group-10 {
+  align-items: flex-start;
+  display: flex;
+  padding: 0 6.8px;
+  width: 63px;
+}
+.produce .mask-group-11 {
+  align-items: flex-end;
+  display: flex;
+  height: 50px;
+  left: 6px;
+  overflow: hidden;
+  padding: 0 5.4px;
+  position: absolute;
+  top: 33px;
+  width: 63px;
+}
+.produce .mask-group-12 {
+  align-items: flex-start;
+  display: flex;
+  height: 50px;
+  left: 6px;
+  padding: 0 20.5px;
+  position: absolute;
+  top: 33px;
+  width: 63px;
+}
+.produce .mask-group-13 {
+  align-items: flex-start;
+  display: flex;
+  height: 50px;
+  left: 6px;
+  overflow: hidden;
+  position: absolute;
+  top: 33px;
+  width: 63px;
+}
+.produce .mask-group-2 {
+  align-items: flex-start;
+  display: flex;
+  padding: 0 7.1px;
+  width: 63px;
+}
+.produce .mask-group-3 {
+  align-items: flex-end;
+  display: flex;
+  height: 50px;
+  left: 6px;
+  overflow: hidden;
+  padding: 2px 0;
+  position: absolute;
+  top: 33px;
+  width: 63px;
+}
+.produce .mask-group-4 {
+  align-items: flex-end;
+  display: flex;
+  overflow: hidden;
+  padding: 0 11.4px;
+  width: 63px;
+}
+.produce .mask-group-5 {
+  align-items: flex-end;
+  display: flex;
+  height: 50px;
+  left: 6px;
+  overflow: hidden;
+  padding: 0 3.4px;
+  position: absolute;
+  top: 33px;
+  width: 63px;
+}
+.produce .mask-group-8 {
+  align-items: flex-end;
+  display: flex;
+  height: 50px;
+  overflow: hidden;
+  padding: 0 6.7px;
+  width: 63px;
+}
+.produce .mask-group-9 {
+  align-items: flex-start;
+  display: flex;
+  height: 50px;
+  padding: 0 6.4px;
+  width: 63px;
+}
+.produce .navigation {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  left: 22px;
+  min-height: 298px;
+  position: fixed;
+  top: 151px;
+  width: 36px;
+}
+.produce .overlap-group {
+  height: 337px;
+  left: 132px;
+  position: absolute;
+  top: 117px;
+  width: 862px;
+}
+.produce .overlap-group-1 {
+  height: 67px;
+  left: 10px;
+  position: absolute;
+  top: 4px;
+  width: 105px;
+}
+.produce .overlap-group-2 {
+  align-self: center;
+  height: 48px;
+  margin-left: 4px;
+  margin-top: 1px;
+  position: relative;
+  width: 42px;
+}
+.produce .overlap-group1 {
+  height: 50px;
+  margin-top: -0px;
+  position: relative;
+  width: 49px;
+}
+.produce .overlap-group1-1 {
+  height: 50px;
+  margin-bottom: -0px;
+  position: relative;
+  width: 52px;
+}
+.produce .overlap-group1-10 {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.161);
+  height: 93px;
+  position: relative;
+  width: 146px;
+}
+.produce .overlap-group1-11 {
+  height: 18px;
+  left: 0px;
+  position: absolute;
+  top: 15px;
+  width: 36px;
+}
+.produce .overlap-group1-2 {
+  height: 46px;
+  position: relative;
+  width: 63px;
+}
+.produce .overlap-group1-3 {
+  align-items: flex-end;
+  background-image: url(https://anima-uploads.s3.amazonaws.com/projects/603fed2c1ade8617800e613e/releases/603fed5b179367c8bbc15e0e/img/path-2350@1x.png);
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 50px;
+  padding: 4.9px 4.5px;
+  width: 22px;
+}
+.produce .overlap-group1-4 {
+  height: 50px;
+  margin-bottom: -0px;
+  position: relative;
+  width: 40px;
+}
+.produce .overlap-group1-5 {
+  height: 44px;
+  margin-top: -0px;
+  position: relative;
+  width: 48px;
+}
+.produce .overlap-group1-6 {
+  align-items: flex-start;
+  background-image: url();
+  background-size: 100% 100%;
+  display: flex;
+  height: 26px;
+  min-width: 48px;
+  padding: 4.2px 5.4px;
+}
+.produce .overlap-group1-7 {
+  align-items: flex-start;
+  background-image: url(https://anima-uploads.s3.amazonaws.com/projects/603fed2c1ade8617800e613e/releases/603fed5b179367c8bbc15e0e/img/path-2309@1x.png);
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: -0px;
+  min-height: 50px;
+  padding: 3.3px 1.3px;
+  width: 50px;
+}
+.produce .overlap-group1-8 {
+  height: 50px;
+  position: relative;
+  width: 49px;
+}
+.produce .overlap-group1-9 {
+  height: 50px;
+  margin-bottom: -0px;
+  position: relative;
+  width: 56px;
+}
+.produce .overlap-group10 {
+  height: 124px;
+  margin-top: -59.5px;
+  position: relative;
+  width: 840px;
+}
+.produce .overlap-group2 {
+  height: 24px;
+  margin-left: 4.58px;
+  position: relative;
+  width: 46px;
+}
+.produce .overlap-group2-1 {
+  height: 28px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 30px;
+}
+.produce .overlap-group2-2 {
+  height: 46px;
+  margin-bottom: -0px;
+  position: relative;
+  width: 36px;
+}
+.produce .overlap-group3 {
+  align-self: flex-end;
+  height: 28px;
+  margin-top: 1px;
+  position: relative;
+  width: 37px;
+}
+.produce .overlap-group3-1 {
+  height: 36px;
+  margin-top: -0px;
+  position: relative;
+  width: 36px;
+}
+.produce .overlap-group6 {
+  height: 64px;
+  left: 10px;
+  position: absolute;
+  top: 4px;
+  width: 91px;
+}
+.produce .overlap-group9 {
+  height: 66px;
+  left: 10px;
+  position: absolute;
+  top: 4px;
+  width: 105px;
+}
+.produce .path-127 {
+  height: 4px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 36px;
+}
+.produce .path-128 {
+  height: 16px;
+  left: 0px;
+  position: absolute;
+  top: 2px;
+  width: 36px;
+}
+.produce .path-129 {
+  height: 6px;
+  left: 7px;
+  position: absolute;
+  top: 12px;
+  width: 11px;
+}
+.produce .path-130 {
+  height: 2px;
+  left: 4px;
+  position: absolute;
+  top: 9px;
+  width: 2px;
+}
+.produce .path-131 {
+  height: 12px;
+  left: 19px;
+  position: absolute;
+  top: 0px;
+  width: 10px;
+}
+.produce .path-132 {
+  height: 15px;
+  left: 1px;
+  position: absolute;
+  top: -0px;
+  width: 17px;
+}
+.produce .path-2233 {
+  height: 31px;
+  left: 3px;
+  position: absolute;
+  top: 5px;
+  width: 29px;
+}
+.produce .path-2234 {
+  height: 19px;
+  left: 3px;
+  position: absolute;
+  top: 5px;
+  width: 29px;
+}
+.produce .path-2235 {
+  height: 13px;
+  left: 6px;
+  position: absolute;
+  top: 23px;
+  width: 9px;
+}
+.produce .path-2236 {
+  height: 20px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 36px;
+}
+.produce .path-224 {
+  height: 2px;
+  margin-left: 0px;
+  margin-top: 4px;
+  width: 23px;
+}
+.produce .path-2243 {
+  height: 2px;
+  width: 13px;
+}
+.produce .path-2259 {
+  height: 5px;
+  left: 38px;
+  position: absolute;
+  top: 0px;
+  width: 11px;
+}
+.produce .path-2260 {
+  height: 48px;
+  left: 0px;
+  position: absolute;
+  top: 2px;
+  width: 41px;
+}
+.produce .path-2261 {
+  height: 40px;
+  left: 5px;
+  position: absolute;
+  top: 6px;
+  width: 33px;
+}
+.produce .path-2262 {
+  height: 19px;
+  left: 9px;
+  position: absolute;
+  top: 21px;
+  width: 17px;
+}
+.produce .path-2263 {
+  height: 36px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 56px;
+}
+.produce .path-2264 {
+  height: 22px;
+  left: 23px;
+  position: absolute;
+  top: 8px;
+  width: 28px;
+}
+.produce .path-2265 {
+  height: 16px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 56px;
+}
+.produce .path-2266 {
+  height: 28px;
+  left: 35px;
+  position: absolute;
+  top: 18px;
+  width: 28px;
+}
+.produce .path-2267 {
+  height: 6px;
+  left: 35px;
+  position: absolute;
+  top: 18px;
+  width: 28px;
+}
+.produce .path-2268 {
+  height: 28px;
+  left: 35px;
+  position: absolute;
+  top: 18px;
+  width: 6px;
+}
+.produce .path-2269 {
+  height: 37px;
+  left: 0px;
+  position: absolute;
+  top: 13px;
+  width: 40px;
+}
+.produce .path-2270 {
+  height: 10px;
+  left: 4px;
+  position: absolute;
+  top: 16px;
+  width: 9px;
+}
+.produce .path-2271 {
+  height: 13px;
+  left: 13px;
+  position: absolute;
+  top: 5px;
+  width: 7px;
+}
+.produce .path-2272 {
+  height: 3px;
+  left: 16px;
+  position: absolute;
+  top: 18px;
+  width: 8px;
+}
+.produce .path-2273 {
+  height: 12px;
+  left: 19px;
+  position: absolute;
+  top: 0px;
+  width: 12px;
+}
+.produce .path-2274 {
+  height: 28px;
+  left: 27px;
+  position: absolute;
+  top: 0px;
+  width: 29px;
+}
+.produce .path-2275 {
+  height: 29px;
+  left: 0px;
+  position: absolute;
+  top: 9px;
+  width: 29px;
+}
+.produce .path-2276 {
+  height: 5px;
+  left: 29px;
+  position: absolute;
+  top: 26px;
+  width: 10px;
+}
+.produce .path-2277 {
+  height: 5px;
+  left: 27px;
+  position: absolute;
+  top: 22px;
+  width: 7px;
+}
+.produce .path-2278 {
+  height: 5px;
+  left: 34px;
+  position: absolute;
+  top: 22px;
+  width: 7px;
+}
+.produce .path-2279 {
+  height: 5px;
+  left: 9px;
+  position: absolute;
+  top: 15px;
+  width: 10px;
+}
+.produce .path-2280 {
+  height: 5px;
+  left: 7px;
+  position: absolute;
+  top: 11px;
+  width: 7px;
+}
+.produce .path-2281 {
+  height: 5px;
+  left: 14px;
+  position: absolute;
+  top: 11px;
+  width: 7px;
+}
+.produce .path-2282 {
+  height: 5px;
+  left: 36px;
+  position: absolute;
+  top: 6px;
+  width: 10px;
+}
+.produce .path-2283 {
+  height: 5px;
+  left: 34px;
+  position: absolute;
+  top: 2px;
+  width: 7px;
+}
+.produce .path-2284 {
+  height: 5px;
+  left: 42px;
+  position: absolute;
+  top: 2px;
+  width: 7px;
+}
+.produce .path-2285 {
+  height: 11px;
+  left: 3px;
+  position: absolute;
+  top: 20px;
+  width: 5px;
+}
+.produce .path-2286 {
+  height: 11px;
+  left: 21px;
+  position: absolute;
+  top: 32px;
+  width: 5px;
+}
+.produce .path-2287 {
+  height: 12px;
+  left: 29px;
+  position: absolute;
+  top: 7px;
+  width: 4px;
+}
+.produce .path-2310 {
+  height: 18px;
+  left: -4px;
+  position: absolute;
+  top: 11px;
+  width: 18px;
+}
+.produce .path-2311 {
+  height: 18px;
+  left: -1px;
+  position: absolute;
+  top: 7px;
+  width: 18px;
+}
+.produce .path-2312 {
+  height: 18px;
+  left: 2px;
+  position: absolute;
+  top: 4px;
+  width: 18px;
+}
+.produce .path-2313 {
+  height: 18px;
+  left: 6px;
+  position: absolute;
+  top: -0px;
+  width: 18px;
+}
+.produce .path-2314 {
+  height: 11px;
+  margin-left: 5.5px;
+  width: 9px;
+}
+.produce .path-2315 {
+  height: 10px;
+  left: 25px;
+  position: absolute;
+  top: 16px;
+  width: 12px;
+}
+.produce .path-2316 {
+  height: 21px;
+  left: 28px;
+  position: absolute;
+  top: 0px;
+  width: 9px;
+}
+.produce .path-2318 {
+  height: 10px;
+  left: 5px;
+  position: absolute;
+  top: 8px;
+  width: 7px;
+}
+.produce .path-2319 {
+  height: 15px;
+  left: 0px;
+  position: absolute;
+  top: 9px;
+  width: 39px;
+}
+.produce .path-2320 {
+  height: 3px;
+  left: 18px;
+  position: absolute;
+  top: 14px;
+  width: 3px;
+}
+.produce .path-2321 {
+  height: 21px;
+  left: 30px;
+  position: absolute;
+  top: 1px;
+  width: 16px;
+}
+.produce .path-2322 {
+  height: 3px;
+  left: 13px;
+  position: absolute;
+  top: 17px;
+  width: 3px;
+}
+.produce .path-2323 {
+  height: 3px;
+  left: 19px;
+  position: absolute;
+  top: 19px;
+  width: 3px;
+}
+.produce .path-2324 {
+  height: 3px;
+  left: 23px;
+  position: absolute;
+  top: 15px;
+  width: 3px;
+}
+.produce .path-2325 {
+  height: 3px;
+  left: 24px;
+  position: absolute;
+  top: 19px;
+  width: 3px;
+}
+.produce .path-2326 {
+  height: 3px;
+  left: 5px;
+  position: absolute;
+  top: 19px;
+  width: 3px;
+}
+.produce .path-2327 {
+  height: 2px;
+  left: 10px;
+  position: absolute;
+  top: 20px;
+  width: 3px;
+}
+.produce .path-2328 {
+  align-self: center;
+  height: 7px;
+  margin-top: 0.79px;
+  width: 12px;
+}
+.produce .path-2329 {
+  height: 5px;
+  width: 4px;
+}
+.produce .path-2330 {
+  height: 39px;
+  left: 0px;
+  position: absolute;
+  top: 11px;
+  width: 39px;
+}
+.produce .path-2331 {
+  height: 6px;
+  left: 16px;
+  position: absolute;
+  top: 29px;
+  width: 6px;
+}
+.produce .path-2332 {
+  height: 8px;
+  left: 13px;
+  position: absolute;
+  top: 26px;
+  width: 3px;
+}
+.produce .path-2333 {
+  height: 3px;
+  left: 16px;
+  position: absolute;
+  top: 34px;
+  width: 8px;
+}
+.produce .path-2334 {
+  height: 5px;
+  left: 16px;
+  position: absolute;
+  top: 22px;
+  width: 5px;
+}
+.produce .path-2335 {
+  height: 5px;
+  left: 19px;
+  position: absolute;
+  top: 22px;
+  width: 5px;
+}
+.produce .path-2336 {
+  height: 5px;
+  left: 23px;
+  position: absolute;
+  top: 25px;
+  width: 5px;
+}
+.produce .path-2337 {
+  height: 5px;
+  left: 23px;
+  position: absolute;
+  top: 22px;
+  width: 5px;
+}
+.produce .path-2338 {
+  height: 5px;
+  left: 24px;
+  position: absolute;
+  top: 29px;
+  width: 5px;
+}
+.produce .path-2339 {
+  height: 25px;
+  left: 13px;
+  position: absolute;
+  top: 0px;
+  width: 28px;
+}
+.produce .path-2340 {
+  height: 21px;
+  left: 0px;
+  position: absolute;
+  top: 9px;
+  width: 21px;
+}
+.produce .path-2341 {
+  height: 22px;
+  left: 33px;
+  position: absolute;
+  top: 8px;
+  width: 19px;
+}
+.produce .path-2342 {
+  height: 25px;
+  left: 12px;
+  position: absolute;
+  top: 25px;
+  width: 27px;
+}
+.produce .path-2343 {
+  height: 9px;
+  left: 18px;
+  position: absolute;
+  top: 4px;
+  width: 7px;
+}
+.produce .path-2344 {
+  height: 7px;
+  left: 41px;
+  position: absolute;
+  top: 16px;
+  width: 9px;
+}
+.produce .path-2345 {
+  height: 7px;
+  left: 28px;
+  position: absolute;
+  top: 13px;
+  width: 9px;
+}
+.produce .path-2346 {
+  height: 7px;
+  left: 25px;
+  position: absolute;
+  top: 8px;
+  width: 9px;
+}
+.produce .path-2347 {
+  height: 7px;
+  left: 18px;
+  position: absolute;
+  top: 14px;
+  width: 9px;
+}
+.produce .path-2348 {
+  height: 8px;
+  left: 29px;
+  position: absolute;
+  top: 3px;
+  width: 8px;
+}
+.produce .path-2349 {
+  height: 7px;
+  left: 5px;
+  position: absolute;
+  top: 15px;
+  width: 9px;
+}
+.produce .path-2351 {
+  height: 3px;
+  margin-right: 3.91px;
+  width: 4px;
+}
+.produce .path-2352 {
+  height: 3px;
+  margin-right: 0.5px;
+  margin-top: 2px;
+  width: 4px;
+}
+.produce .path-2353 {
+  height: 3px;
+  margin-right: 8.78px;
+  margin-top: 2px;
+  width: 4px;
+}
+.produce .path-2354 {
+  height: 3px;
+  margin-right: 1.16px;
+  margin-top: 2px;
+  width: 4px;
+}
+.produce .path-2355 {
+  height: 3px;
+  margin-right: 1.38px;
+  margin-top: 1px;
+  width: 4px;
+}
+.produce .path-2356 {
+  height: 3px;
+  margin-right: 6.7px;
+  margin-top: 4px;
+  width: 4px;
+}
+.produce .path-2357 {
+  height: 3px;
+  margin-right: 6.64px;
+  margin-top: 1px;
+  width: 4px;
+}
+.produce .path-2358 {
+  height: 3px;
+  margin-right: 1.16px;
+  width: 4px;
+}
+.produce .path-2359 {
+  height: 9px;
+  left: 28px;
+  position: absolute;
+  top: 0px;
+  width: 5px;
+}
+.produce .path-2360 {
+  height: 15px;
+  left: 14px;
+  position: absolute;
+  top: 3px;
+  width: 33px;
+}
+.produce .path-2361 {
+  height: 39px;
+  left: 13px;
+  position: absolute;
+  top: 11px;
+  width: 36px;
+}
+.produce .path-2362 {
+  height: 7px;
+  left: 20px;
+  position: absolute;
+  top: 18px;
+  width: 3px;
+}
+.produce .path-2363 {
+  height: 7px;
+  left: 30px;
+  position: absolute;
+  top: 21px;
+  width: 3px;
+}
+.produce .path-2364 {
+  height: 7px;
+  left: 40px;
+  position: absolute;
+  top: 18px;
+  width: 3px;
+}
+.produce .path-2365 {
+  height: 7px;
+  left: 24px;
+  position: absolute;
+  top: 29px;
+  width: 3px;
+}
+.produce .path-2366 {
+  height: 7px;
+  left: 30px;
+  position: absolute;
+  top: 37px;
+  width: 3px;
+}
+.produce .path-2367 {
+  height: 7px;
+  left: 36px;
+  position: absolute;
+  top: 29px;
+  width: 3px;
+}
+.produce .path-805 {
+  height: 4px;
+  left: 0px;
+  position: absolute;
+  top: 13px;
+  width: 5px;
+}
+.produce .path-806 {
+  height: 24px;
+  left: 5px;
+  position: absolute;
+  top: 0px;
+  width: 19px;
+}
+.produce .path-807 {
+  height: 23px;
+  left: 20px;
+  position: absolute;
+  top: 0px;
+  width: 16px;
+}
+.produce .path-808 {
+  height: 9px;
+  left: 0px;
+  position: absolute;
+  top: 14px;
+  width: 13px;
+}
+.produce .path-809 {
+  height: 5px;
+  left: 24px;
+  position: absolute;
+  top: 16px;
+  width: 8px;
+}
+.produce .path-810 {
+  height: 5px;
+  left: 26px;
+  position: absolute;
+  top: 10px;
+  width: 8px;
+}
+.produce .path-811 {
+  height: 4px;
+  left: 28px;
+  position: absolute;
+  top: 5px;
+  width: 7px;
+}
+.produce .path-812 {
+  height: 16px;
+  left: 13px;
+  position: absolute;
+  top: 7px;
+  width: 11px;
+}
+.produce .path-813 {
+  height: 4px;
+  left: 13px;
+  position: absolute;
+  top: 6px;
+  width: 8px;
+}
+.produce .path-814 {
+  height: 25px;
+  left: 0px;
+  position: absolute;
+  top: 21px;
+  width: 34px;
+}
+.produce .path-815 {
+  height: 2px;
+  left: 3px;
+  position: absolute;
+  top: 33px;
+  width: 8px;
+}
+.produce .path-816 {
+  height: 2px;
+  left: 3px;
+  position: absolute;
+  top: 37px;
+  width: 9px;
+}
+.produce .path-817 {
+  height: 2px;
+  left: 3px;
+  position: absolute;
+  top: 40px;
+  width: 11px;
+}
+.produce .path-818 {
+  height: 2px;
+  left: 16px;
+  position: absolute;
+  top: 40px;
+  width: 3px;
+}
+.produce .quantity {
+  align-self: center;
+  height: 45px;
+  letter-spacing: 0px;
+  line-height: 83px;
+  margin-bottom: 2px;
+  margin-left: 1px;
+  min-height: 45px;
+  white-space: nowrap;
+  width: 28px;
+}
+.produce .quantity-1 {
+  height: 45px;
+  left: 63px;
+  letter-spacing: 0px;
+  line-height: 83px;
+  position: absolute;
+  top: 19px;
+  white-space: nowrap;
+  width: 28px;
+}
+.produce .quantity-2 {
+  height: 45px;
+  left: 0px;
+  letter-spacing: 0px;
+  line-height: 83px;
+  position: absolute;
+  top: 0px;
+  white-space: nowrap;
+  width: 28px;
+}
+.produce .quantity-3 {
+  align-self: center;
+  height: 45px;
+  letter-spacing: 0px;
+  line-height: 83px;
+  margin-bottom: 2px;
+  margin-left: 4px;
+  min-height: 45px;
+  white-space: nowrap;
+  width: 28px;
+}
+.produce .quantity-4 {
+  height: 45px;
+  left: 59px;
+  letter-spacing: 0px;
+  line-height: 83px;
+  position: absolute;
+  top: 19px;
+  white-space: nowrap;
+  width: 46px;
+}
+.produce .quantity-5 {
+  height: 21px;
+  left: 63px;
+  position: absolute;
+  top: 36px;
+  width: 21px;
+}
+.produce .rectangle-204 {
+  background-color: rgba(240, 85, 64, 1);
+  height: 7px;
+  left: 27px;
+  position: absolute;
+  top: 5px;
+  width: 4px;
+}
+.produce .rectangle-205 {
+  background-color: rgba(243, 112, 90, 1);
+  height: 4px;
+  left: 25px;
+  position: absolute;
+  top: 2px;
+  width: 7px;
+}
+.produce .rectangle-206 {
+  background-color: rgba(52, 74, 94, 1);
+  height: 10px;
+  left: 18px;
+  position: absolute;
+  top: 23px;
+  width: 12px;
+}
+.produce .rectangle-207 {
+  background-color: var(--sky-blue);
+  height: 8px;
+  width: 4px;
+}
+.produce .rectangle-208 {
+  background-color: var(--sky-blue);
+  height: 8px;
+  margin-left: 1px;
+  width: 4px;
+}
+.produce .rectangle-211 {
+  background-color: var(--tulip-tree);
+  height: 14px;
+  left: 28px;
+  position: absolute;
+  top: -1px;
+  transform: rotate(45.87deg);
+  width: 2px;
+}
+.produce .rectangle-212 {
+  background-color: var(--tulip-tree);
+  height: 14px;
+  left: 42px;
+  position: absolute;
+  top: 14px;
+  transform: rotate(43.5deg);
+  width: 2px;
+}
+.produce .rectangle-213 {
+  background-color: var(--yellow);
+  height: 18px;
+  left: 31px;
+  position: absolute;
+  top: -2px;
+  transform: rotate(45deg);
+  width: 2px;
+}
+.produce .rectangle-214 {
+  background-color: var(--tulip-tree);
+  height: 21px;
+  left: 34px;
+  position: absolute;
+  top: -2px;
+  transform: rotate(45deg);
+  width: 2px;
+}
+.produce .rectangle-215 {
+  background-color: var(--yellow);
+  height: 21px;
+  left: 36px;
+  position: absolute;
+  top: -1px;
+  transform: rotate(45deg);
+  width: 2px;
+}
+.produce .rectangle-216 {
+  background-color: var(--tulip-tree);
+  height: 21px;
+  left: 38px;
+  position: absolute;
+  top: 0px;
+  transform: rotate(45deg);
+  width: 2px;
+}
+.produce .rectangle-217 {
+  background-color: var(--yellow);
+  height: 21px;
+  left: 39px;
+  position: absolute;
+  top: 3px;
+  transform: rotate(45deg);
+  width: 2px;
+}
+.produce .rectangle-218 {
+  background-color: var(--tulip-tree);
+  height: 20px;
+  left: 41px;
+  position: absolute;
+  top: 6px;
+  transform: rotate(45deg);
+  width: 2px;
+}
+.produce .rectangle-219 {
+  background-color: var(--yellow);
+  height: 17px;
+  left: 42px;
+  position: absolute;
+  top: 9px;
+  transform: rotate(44.29deg);
+  width: 2px;
+}
+.produce .rectangle-220 {
+  background-color: var(--ronchi);
+  height: 2px;
+  left: 5px;
+  position: absolute;
+  top: 32px;
+  transform: rotate(45deg);
+  width: 2px;
+}
+.produce .rectangle-221 {
+  background-color: var(--ronchi);
+  height: 2px;
+  left: 6px;
+  position: absolute;
+  top: 34px;
+  transform: rotate(45deg);
+  width: 2px;
+}
+.produce .rectangle-222 {
+  background-color: var(--ronchi);
+  height: 2px;
+  left: 8px;
+  position: absolute;
+  top: 35px;
+  transform: rotate(45deg);
+  width: 2px;
+}
+.produce .rectangle-223 {
+  background-color: var(--ronchi);
+  height: 2px;
+  left: 10px;
+  position: absolute;
+  top: 37px;
+  transform: rotate(45deg);
+  width: 2px;
+}
+.produce .rectangle-224 {
+  background-color: var(--ronchi);
+  height: 2px;
+  left: 12px;
+  position: absolute;
+  top: 39px;
+  transform: rotate(45deg);
+  width: 2px;
+}
+.produce .rectangle-225 {
+  background-color: var(--ronchi);
+  height: 2px;
+  left: 14px;
+  position: absolute;
+  top: 41px;
+  transform: rotate(45deg);
+  width: 2px;
+}
+.produce .rectangle-226 {
+  background-color: var(--ronchi);
+  height: 2px;
+  left: 15px;
+  position: absolute;
+  top: 43px;
+  transform: rotate(45deg);
+  width: 2px;
+}
+.produce .rectangle-227 {
+  background-color: var(--ronchi);
+  height: 2px;
+  left: 17px;
+  position: absolute;
+  top: 44px;
+  transform: rotate(45deg);
+  width: 2px;
+}
+.produce .repeat-grid-1 {
+  align-items: flex-start;
+  display: flex;
+  height: 231px;
+  min-width: 862px;
+  padding: 6px 9px;
+}
+.produce .rice {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin-top: -0px;
+  min-height: 50px;
+  width: 50px;
+}
+.produce .save {
+  left: 747px;
+  letter-spacing: 0px;
+  line-height: 168px;
+  position: absolute;
+  top: 13px;
+  white-space: nowrap;
+}
+.produce .second-bg {
+  background-color: white;
+  border-radius: 32px;
+  height: 590px;
+  left: 8px;
+  position: fixed;
+  top: 5px;
+  width: 1011px;
+}
+.produce .separator {
+  align-self: flex-end;
+  height: 1px;
+  margin-top: 16px;
+  width: 804px;
+}
+.produce .tile {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.161);
+  height: 93px;
+  position: relative;
+  width: 146px;
+}
+.produce .tile-1 {
+  align-items: flex-start;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.161);
+  display: flex;
+  height: 93px;
+  min-width: 146px;
+  padding: 4px 6px;
+}
+.produce .tile-2 {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.161);
+  height: 93px;
+  margin-top: 28px;
+  position: relative;
+  width: 146px;
+}
+.produce .tile-3 {
+  align-items: flex-start;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.161);
+  display: flex;
+  height: 93px;
+  margin-top: 28px;
+  min-width: 146px;
+  padding: 4px 6px;
+}
+.produce .tile-new {
+  align-items: flex-start;
+  background-color: white;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.161);
+  display: flex;
+  margin-left: 9px;
+  margin-top: 13px;
+  min-width: 146px;
+}
+.produce .title {
+  letter-spacing: 0px;
+  line-height: 63.6px;
+  margin-top: -9px;
+  min-height: 57px;
+  text-align: center;
+  white-space: nowrap;
+  width: 188px;
+}
+.produce .title-1 {
+  letter-spacing: 0px;
+  line-height: 31px;
+  margin-bottom: -2px;
+  margin-left: 4px;
+  min-height: 29px;
+  white-space: nowrap;
+}
+.produce .title-2 {
+  left: 0px;
+  letter-spacing: 0px;
+  line-height: 31px;
+  position: absolute;
+  top: 0px;
+  white-space: nowrap;
+}
+.produce .unit {
+  height: 25px;
+  left: 88px;
+  letter-spacing: 0px;
+  line-height: 55px;
+  position: absolute;
+  top: 41px;
+  white-space: nowrap;
+  width: 17px;
+}
+.produce .unit-1 {
+  left: 89px;
+  letter-spacing: 0px;
+  line-height: 55px;
+  position: absolute;
+  top: 42px;
+  white-space: nowrap;
+}
+.produce .unit-2 {
+  left: 26px;
+  letter-spacing: 0px;
+  line-height: 55px;
+  position: absolute;
+  top: 23px;
+  white-space: nowrap;
+}
+:root {
+  --cararra: rgba(236, 236, 236, 1);
+  --fire-bush: rgba(220, 150, 40, 1);
+  --oxford-blue: rgba(56, 69, 79, 1);
+  --ronchi: rgba(244, 196, 78, 1);
+  --sky-blue: rgba(138, 215, 248, 1);
+  --star-dust: rgba(158, 158, 157, 1);
+  --tulip-tree: rgba(238, 175, 75, 1);
+  --yellow: rgba(249, 234, 128, 1);
+}
