@@ -29,7 +29,8 @@
             <img class="produce-image" src="assets/tomato.png"></img>
             <span class="produce-count">0</span><span class="produce-unit">TONS</span>
         </div>
-        <div class="produce-new col-md-3">
+				<p id="emptyWarning" style="display: none;">Groceries list is empty, produce with an ammount of zero will apear here.</p>
+        <div class="produce-new col-md-3" style="display:none;">
             <span class="produce-new-tile">+</span>
         </div>
       
@@ -45,7 +46,7 @@
           src="separator@1x.png"
         />
       </div>
-      <div class="save calibri-bold-gray-40px">Save</div>
+       <div class="save calibri-bold-gray-40px" onclick="location.reload()">Reload</div>
     </div>
   </div>
   <div class="navigation">
@@ -53,10 +54,10 @@
       <a href="home.html"><img src="assets/nav-house.png"/></a>
     </div>
     <div class="nav-produce">
-      <a href="produce.html"><img src="assets/nav-bowl.png"/></a>
+      <a href="produce.html"><img  style="opacity:0.5" src="assets/nav-bowl.png"/></a>
     </div>
     <div class="nav-groceries">
-      <a href="groceries.html"><img src="assets/nav-groceries.png"/></a>
+      <a href="groceries.html"><img  style="filter: saturate(10) contrast(2);" src="assets/nav-groceries.png"/></a>
     </div>
   </div>
 </div>

@@ -53,7 +53,7 @@ router
       var search = {};
       // if (req.query.name) search.name = req.query.name;
       if (req.query.unit) search.unit = req.query.unit;
-      if (req.query.count) search.ammount = req.query.count;
+      if (typeof req.query.count == 'number') search.ammount = req.query.count;
 
       // Knex query
       var results = knex("ingredients")

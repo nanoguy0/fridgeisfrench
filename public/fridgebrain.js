@@ -8,11 +8,16 @@ function displayProduceList() {
 
 
 function displayProduceAtZero() {
-  $.get("/i", function (json) {
-    $.each(json.ingredients, function (idx, ingredient) {
-      if (ingredient.count.number == 0)
-        addProduce(ingredient.name, ingredient.icon, ingredient.count.number, ingredient.count.unit);
-    });
+  $.get("/i?count=0", function (json) {
+		if (json.ingredients.length == 0) {
+			$('#emptyWarning').css('display', '');
+		} else {
+			$.each(json.ingredients, function (idx, ingredient) {
+				if (ingredient.count.number == 0)
+					addProduce(ingredient.name, ingredient.icon, ingredient.count.number, ingredient.count.unit);
+			});
+		}
+    
   });
 }
 
@@ -21,31 +26,40 @@ function addProduce(name, image, count, unit) {
   $(".produce-tile").first().clone().insertBefore(".produce-new");
   if (count == 0) $('.produce-tile').last().addClass("depleted");
   var identifier = `${name.replace(' ', '-')}-product`;
-  $('.produce-tile').last().attr('id', identifier)
+  $('.produce-tile').last().attr('id', identifier);
+	$('.produce-tile').last().click(() => {
+		// document.getElementById(identifier).toggleAttribute('produce-edit')
+		$(`#${identifier}`).toggleClass('produce-edit');
+	});
   $('.produce-tile .produce-name').last().text(name);
   $('.produce-tile .produce-image').last().attr("src", "assets/" + image + ".png");
   $('.produce-tile .produce-count').last().text(count);
   $('.produce-tile .produce-unit').last().text(unit);
-  $('.produce-tile .produce-subtract').last().click(function () {
+  $('.produce-tile .produce-subtract').last().click(function (e) {
+		e.stopPropagation();
     var currentAmount = Number($(`#${identifier} .produce-count`).text()) - 1;
     if (currentAmount <= -1) return;
     $(`#${identifier} .produce-count`).text(currentAmount);
 
     $.post('/i', { name: $(`#${identifier} .produce-name`).text(), count: { number: currentAmount || 0 } }, function (result) {
       console.log(result);
+			if (currentAmount == 0) location.reload();
       // location.reload()
     });
   });
-  $('.produce-tile .produce-add').last().click(function () {
+  $('.produce-tile .produce-add').last().click(function (e) {
+		e.stopPropagation();
     var currentAmount = Number($(`#${identifier} .produce-count`).text()) + 1;
     $(`#${identifier} .produce-count`).text(currentAmount);
 
     $.post('/i', { name: $(`#${identifier} .produce-name`).text(), count: { number: currentAmount || 0 } }, function (result) {
       // console.log(result);
+			if (currentAmount == 1) location.reload(); 
       // location.reload()
     });
   });
-  $('.produce-tile .produce-delete').last().click(function () {
+  $('.produce-tile .produce-delete').last().click(function (e) {
+		e.stopPropagation();
     $.ajax({
       url: `/i?name=${$(`#${identifier} .produce-name`).text()}`,
       type: 'DELETE',

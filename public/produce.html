@@ -29,12 +29,19 @@
       <div class="container-fluid">
         <div class="produce-row row">
           <div class="produce-tile col-md-3">
-            <span class="produce-name">NAME</span>
-            <img class="produce-image" src="assets/tomato.png"></img>
-            <span class="produce-count">0</span><span class="produce-unit">TONS</span>
-            <button type="button" class="btn btn-primary produce-subtract">-</button>
-            <button type="button" class="btn btn-primary produce-add">+</button>
-            <span class="produce-delete" style="float: right;">X</span>
+						<div class="produce-header" style="display: block; width:100%;">
+							<span class="produce-name" style=" width: 90%;float:left;">NAME</span>
+							<span class="produce-delete" style="float:left; width: 10%;">X</span>
+						</div>
+						<div class="produce-data" style="display: block;">  
+							<img class="produce-image"  src="assets/tomato.png"></img>
+							<span class="produce-count">0</span><span class="produce-unit">TONS</span>
+								<button type="button" style="float: right;" class="btn btn-primary produce-add">+</button>
+							<button type="button" style="float: right;" class="btn btn-primary produce-subtract">-</button>
+						
+						</div>
+          
+            
           </div>
           <div class="produce-new col-md-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
             <span class="produce-new-tile">+</span>
