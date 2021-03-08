@@ -60,7 +60,7 @@ router
         .select()
         .where(search)
         .whereBetween("expiry_date", [
-          req.query.from || 0,
+          req.query.from || -1,
           req.query.to || Date.now(),
         ]);
 

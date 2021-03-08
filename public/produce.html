@@ -1,8 +1,19 @@
 <html>
 <head>
-  <title>FridgeIsFrench</title>
+  <title>Fridge - Produce</title>
+  <meta charset="utf-8" />
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="google" content="notranslate" />
+  <!-- <link rel="shortcut icon" type="image/ico" href="images/favicon.ico"> -->
+  <!-- load css -->
   <link rel="stylesheet" href="produce.css">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <!-- load scripts and libraries-->
+  <!-- <link href="//stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" /> -->
+  <link href="//cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <script src="//cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+  <script src="/fridgebrain.js"></script>
 </head>
 
 <body>
@@ -10,435 +21,21 @@
   <div class="bg"></div>
   <div class="second-bg"></div>
   <div class="inner-square"></div>
-  <div class="overlap-group">
-    <div class="grid">
-
-      <div class="produce-tile">
-          <span class="produce-name"/>
-          <img class="produce-icon" src=""></img>
-          <span class="produce-count"/><span class="produce-unit"/>
-      </div>
-
-
-      <div class="repeat-grid-1">
-        <div class="auto-flex">
-          <div class="tile-1">
-            <div class="auto-flex5">
-              <div class="title-1 bebasneue-normal-black-22px">AVOCADO</div>
-              <div class="mask-group-2">
-                <div class="overlap-group1">
-                  <img
-                    class="path-2259"
-                    src="path-2259@1x.png"
-                  />
-                  <img
-                    class="path-2260"
-                    src="path-2260@1x.png"
-                  />
-                  <img
-                    class="path-2261"
-                    src="path-2261@1x.png"
-                  />
-                  <img
-                    class="path-2262"
-                    src="path-2262@1x.png"
-                  />
-                  <div class="ellipse-387"></div>
-                  <div class="ellipse-388"></div>
-                  <div class="ellipse-389"></div>
-                </div>
-              </div>
-            </div>
-            <div class="quantity bebasneue-normal-black-35px">4</div>
-          </div>
-          <div class="tile-2">
-            <div class="overlap-group-1">
-              <div class="title-2 bebasneue-normal-black-22px">Broccoli</div>
-              <div class="quantity-1 bebasneue-normal-black-35px">2</div>
-              <div class="unit-1 bebasneue-normal-black-19px">LB</div>
-            </div>
-            <div class="mask-group-11">
-              <img
-                class="broccoli"
-                src="broccoli@1x.png"
-              />
-            </div>
-          </div>
+  <div class="produce-list-area">
+    <div class="container-fluid">
+      <div class="produce-row row">
+        <div class="produce-tile col-md-3">
+            <span class="produce-name">NAME</span>
+            <img class="produce-image" src="assets/tomato.png"></img>
+            <span class="produce-count">0</span><span class="produce-unit">TONS</span>
         </div>
-        <div class="auto-flex-1">
-          <div class="tile">
-            <div class="overlap-group-1">
-              <div class="title-2 bebasneue-normal-black-22px">parmasean</div>
-              <div class="quantity-1 bebasneue-normal-black-35px">4</div>
-              <div class="unit-1 bebasneue-normal-black-19px">LB</div>
-            </div>
-            <div class="mask-group-3">
-              <div class="overlap-group1-2">
-                <img
-                  class="path-2263"
-                  src="path-2263@1x.png"
-                />
-                <img
-                  class="path-2264"
-                  src="path-2264@1x.png"
-                />
-                <img
-                  class="path-2265"
-                  src="path-2265@1x.png"
-                />
-                <img
-                  class="path-2266"
-                  src="path-2266@1x.png"
-                />
-                <img
-                  class="path-2267"
-                  src="path-2267@1x.png"
-                />
-                <img
-                  class="path-2268"
-                  src="path-2268@1x.png"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="tile-2">
-            <div class="overlap-group6">
-              <div class="title-2 bebasneue-normal-black-22px">Cucumber</div>
-              <div class="quantity-1 bebasneue-normal-black-35px">1</div>
-            </div>
-            <div class="mask-group-12">
-              <div class="overlap-group1-3">
-                <img
-                  class="path-2351"
-                  src="path-2351@1x.png"
-                />
-                <img
-                  class="path-2352"
-                  src="path-2351@1x.png"
-                />
-                <img
-                  class="path-2357"
-                  src="path-2351@1x.png"
-                />
-                <img
-                  class="path-2355"
-                  src="path-2351@1x.png"
-                />
-                <img
-                  class="path-2353"
-                  src="path-2351@1x.png"
-                />
-                <img
-                  class="path-2358"
-                  src="path-2351@1x.png"
-                />
-                <img
-                  class="path-2356"
-                  src="path-2351@1x.png"
-                />
-                <img
-                  class="path-2354"
-                  src="path-2351@1x.png"
-                />
-              </div>
-            </div>
-          </div>
+        <div class="produce-new col-md-3"data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <span class="produce-new-tile">+</span>
         </div>
-        <div class="auto-flex-1">
-          <div class="tile-1">
-            <div class="auto-flex-2">
-              <div class="title-1 bebasneue-normal-black-22px">Apple</div>
-              <div class="mask-group-4">
-                <div class="overlap-group1-4">
-                  <img
-                    class="path-2269"
-                    src="path-2269@1x.png"
-                  />
-                  <img
-                    class="path-2270"
-                    src="path-2270@1x.png"
-                  />
-                  <img
-                    class="path-2271"
-                    src="path-2271@1x.png"
-                  />
-                  <img
-                    class="path-2272"
-                    src="path-2272@1x.png"
-                  />
-                  <img
-                    class="path-2273"
-                    src="path-2273@1x.png"
-                  />
-                </div>
-              </div>
-            </div>
-            <div class="quantity-3 bebasneue-normal-black-35px">4</div>
-          </div>
-          <div class="tile-2">
-            <div class="overlap-group-1">
-              <div class="title-2 bebasneue-normal-black-22px">Strawberries</div>
-              <div class="quantity-1 bebasneue-normal-black-35px">1</div>
-              <div class="unit-1 bebasneue-normal-black-19px">LB</div>
-            </div>
-            <div class="mask-group-13">
-              <div class="overlap-group1-5">
-                <img
-                  class="path-2359"
-                  src="path-2359@1x.png"
-                />
-                <img
-                  class="path-2360"
-                  src="path-2360@1x.png"
-                />
-                <img
-                  class="path-2361"
-                  src="path-2361@1x.png"
-                />
-                <img
-                  class="path-2362"
-                  src="path-2362@1x.png"
-                />
-                <img
-                  class="path-2363"
-                  src="path-2362@1x.png"
-                />
-                <img
-                  class="path-2364"
-                  src="path-2362@1x.png"
-                />
-                <img
-                  class="path-2365"
-                  src="path-2362@1x.png"
-                />
-                <img
-                  class="path-2366"
-                  src="path-2362@1x.png"
-                />
-                <img
-                  class="path-2367"
-                  src="path-2362@1x.png"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="auto-flex-1">
-          <div class="tile-1">
-            <div class="auto-flex-2">
-              <div class="title-1 bebasneue-normal-black-22px">Rice</div>
-              <div class="mask-group-9">
-                <img
-                  class="rice"
-                  src="rice@1x.png"
-                />
-              </div>
-            </div>
-            <div class="overlap-group-2">
-              <div class="quantity-2 bebasneue-normal-black-35px">7</div>
-              <div class="unit-2 bebasneue-normal-black-19px">LB</div>
-            </div>
-          </div>
-          <div class="tile-3">
-            <div class="auto-flex-2">
-              <div class="title-1 bebasneue-normal-black-22px">Salmon</div>
-              <div class="mask-group-8">
-                <div class="overlap-group1-7">
-                  <img
-                    class="path-2314"
-                    src="path-2314@1x.png"
-                  />
-                  <div class="overlap-group3">
-                    <div class="overlap-group2-1">
-                      <img
-                        class="path-2310"
-                        src="path-2303@1x.png"
-                      />
-                      <img
-                        class="path-2311"
-                        src="path-2311@1x.png"
-                      />
-                      <img
-                        class="path-2312"
-                        src="path-2312@1x.png"
-                      />
-                      <img
-                        class="path-2313"
-                        src="path-2313@1x.png"
-                      />
-                      <div class="ellipse-393"></div>
-                    </div>
-                    <img
-                      class="path-2315"
-                      src="path-2315@1x.png"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="overlap-group-2">
-              <div class="quantity-2 bebasneue-normal-black-35px">0</div>
-              <div class="unit-2 bebasneue-normal-black-19px">LB</div>
-            </div>
-          </div>
-        </div>
-        <div class="auto-flex-1">
-          <div class="tile-1">
-            <div class="auto-flex-2">
-              <div class="title-1 bebasneue-normal-black-22px">pasta</div>
-              <div class="mask-group-10">
-                <div class="overlap-group1-8">
-                  <img
-                    class="path-2330"
-                    src="path-2330@1x.png"
-                  />
-                  <div class="rectangle-211"></div>
-                  <div class="rectangle-212"></div>
-                  <div class="rectangle-213"></div>
-                  <div class="rectangle-214"></div>
-                  <div class="rectangle-215"></div>
-                  <div class="rectangle-216"></div>
-                  <div class="rectangle-217"></div>
-                  <div class="rectangle-218"></div>
-                  <div class="rectangle-219"></div>
-                  <img
-                    class="path-2331"
-                    src="path-2331@1x.png"
-                  />
-                  <img
-                    class="path-2332"
-                    src="path-2332@1x.png"
-                  />
-                  <img
-                    class="path-2333"
-                    src="path-2333@1x.png"
-                  />
-                  <img
-                    class="path-2334"
-                    src="path-2334@1x.png"
-                  />
-                  <img
-                    class="path-2335"
-                    src="path-2335@1x.png"
-                  />
-                  <img
-                    class="path-2336"
-                    src="path-2335@1x.png"
-                  />
-                  <img
-                    class="path-2337"
-                    src="path-2337@1x.png"
-                  />
-                  <img
-                    class="path-2338"
-                    src="path-2334@1x.png"
-                  />
-                  <div class="rectangle-220"></div>
-                  <div class="rectangle-221"></div>
-                  <div class="rectangle-222"></div>
-                  <div class="rectangle-223"></div>
-                  <div class="rectangle-224"></div>
-                  <div class="rectangle-225"></div>
-                  <div class="rectangle-226"></div>
-                  <div class="rectangle-227"></div>
-                </div>
-              </div>
-            </div>
-            <div class="overlap-group-2">
-              <div class="quantity-2 bebasneue-normal-black-35px">2</div>
-              <div class="unit-2 bebasneue-normal-black-19px">LB</div>
-            </div>
-          </div>
-          <div class="tile-2">
-            <div class="overlap-group9">
-              <div class="title-2 bebasneue-normal-black-22px">BlueBerries</div>
-              <div class="quantity-4 bebasneue-normal-black-35px">0</div>
-              <div class="unit bebasneue-normal-black-19px">LB</div>
-            </div>
-            <div class="mask-group-5">
-              <div class="overlap-group1-9">
-                <img
-                  class="path-2274"
-                  src="path-2274@1x.png"
-                />
-                <img
-                  class="path-2275"
-                  src="path-2275@1x.png"
-                />
-                <div class="ellipse-390"></div>
-                <img
-                  class="path-2276"
-                  src="path-2276@1x.png"
-                />
-                <img
-                  class="path-2277"
-                  src="path-2277@1x.png"
-                />
-                <img
-                  class="path-2278"
-                  src="path-2278@1x.png"
-                />
-                <img
-                  class="path-2279"
-                  src="path-2279@1x.png"
-                />
-                <img
-                  class="path-2280"
-                  src="path-2280@1x.png"
-                />
-                <img
-                  class="path-2281"
-                  src="path-2281@1x.png"
-                />
-                <img
-                  class="path-2282"
-                  src="path-2282@1x.png"
-                />
-                <img
-                  class="path-2283"
-                  src="path-2283@1x.png"
-                />
-                <img
-                  class="path-2284"
-                  src="path-2284@1x.png"
-                />
-                <img
-                  class="path-2285"
-                  src="path-2285@1x.png"
-                />
-                <img
-                  class="path-2286"
-                  src="path-2286@1x.png"
-                />
-                <img
-                  class="path-2287"
-                  src="path-2287@1x.png"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="tile-new">
-        <div class="overlap-group1-10">
-          <div class="bg-1"></div>
-          <img
-            class="quantity-5"
-            src="quantity@1x.png"
-          />
-        </div>
-      </div>
+      
     </div>
-    <div class="bg-2"></div>
-    <div class="bg-3"></div>
   </div>
-  <div class="cover-bars">
-    <div class="cover-bar-dark-grey"></div>
-    <div class="cover-bar-white"></div>
-    <div class="cover-bar-grey"></div>
-    <div class="cover-bar-white-bottom"></div>
-    <div class="cover-bar-dark-grey"></div>
-  </div>
+
   <div class="header">
     <div class="overlap-group10">
       <div class="header-1">
@@ -452,150 +49,466 @@
     </div>
   </div>
   <div class="navigation">
-    <div class="house">
-      <div class="overlap-group3-1">
-        <div class="rectangle-204"></div>
-        <div class="rectangle-205"></div>
-        <img
-          class="path-2233"
-          src="path-2233-1@1x.png"
-        />
-        <img
-          class="path-2234"
-          src="path-2234-1@1x.png"
-        />
-        <img
-          class="path-2235"
-          src="path-2235@1x.png"
-        />
-        <div class="rectangle-206"></div>
-        <div class="group-529">
-          <div class="rectangle-207"></div>
-          <div class="rectangle-208"></div>
-        </div>
-        <img
-          class="path-2236"
-          src="path-2236@1x.png"
-        />
-      </div>
+    <div class="nav-home">
+      <a href="home.html"><img src="assets/nav-house.png"/></a>
     </div>
-    <div class="group-326">
-      <div class="overlap-group2-2">
-        <img
-          class="path-805"
-          src="path-805-1@1x.png"
-        />
-        <img
-          class="path-806"
-          src="path-806@1x.png"
-        />
-        <img
-          class="path-807"
-          src="path-807-2@1x.png"
-        />
-        <img
-          class="path-808"
-          src="path-808@1x.png"
-        />
-        <img
-          class="path-809"
-          src="path-809@1x.png"
-        />
-        <img
-          class="path-810"
-          src="path-810@1x.png"
-        />
-        <img
-          class="path-811"
-          src="path-811@1x.png"
-        />
-        <img
-          class="path-812"
-          src="path-812@1x.png"
-        />
-        <img
-          class="path-813"
-          src="path-813@1x.png"
-        />
-        <img
-          class="path-814"
-          src="path-814@1x.png"
-        />
-        <img
-          class="path-815"
-          src="path-815@1x.png"
-        />
-        <img
-          class="path-816"
-          src="path-816@1x.png"
-        />
-        <img
-          class="path-817"
-          src="path-817@1x.png"
-        />
-        <img
-          class="path-818"
-          src="path-818@1x.png"
-        />
-      </div>
+    <div class="nav-produce">
+      <a href="produce.html"><img src="assets/nav-bowl.png"/></a>
     </div>
-    <div class="bowl">
-      <div class="overlap-group1-11">
-        <img
-          class="path-127"
-          src="path-127@1x.png"
-        />
-        <img
-          class="path-128"
-          src="path-128-1@1x.png"
-        />
-        <img
-          class="path-129"
-          src="path-129@1x.png"
-        />
-        <img
-          class="path-130"
-          src="path-130@1x.png"
-        />
-        <img
-          class="path-131"
-          src="path-131@1x.png"
-        />
-      </div>
-      <img
-        class="path-132"
-        src="path-132@1x.png"
-      />
-    </div>
-    <div class="invoice">
-      <img
-        class="path-2243"
-        src="path-2243@1x.png"
-      />
-      <img
-        class="path-224"
-        src="path-2242@1x.png"
-      />
-      <img
-        class="path-224"
-        src="path-2242@1x.png"
-      />
+    <div class="nav-groceries">
+      <a href="groceries.html"><img src="assets/nav-groceries.png"/></a>
     </div>
   </div>
 </div>
 
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Add Produce
+</button>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Add Produce</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row">
+            <label for="exampleInputEmail1">Produce</label>
+            <input class="form-control" id="produceName"
+              placeholder="Enter produce name" style="width: 50%;">
+            <input class="form-control" id="ammountField"
+              placeholder="Amount" style="width: 30%;">
+            <input class="form-control" id="unitField"
+              placeholder="Unit" style="width: 20%;">
+          </div>
+        </div>
+        <!-- <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" onclick="myFunction()">
+          <label class="form-check-label" for="exampleCheck1">Perishable?</label>
+        </div>
+        <div id="myDIV" style="display:none">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Expiration date</label>
+              <input type="email" class="form-control" id="goodluckdoingthisonepaul" aria-describedby="emailHelp"
+                placeholder="ex 01/01/2020">
+            </div>
+          </form>
+        </div>
+        <script>
+          function myFunction() {
+            var x = document.getElementById("myDIV");
+            if (x.style.display === "block") {
+              x.style.display = "none";
+            } else {
+              x.style.display = "block";
+            }
+          }
+        </script>
+        <div>
+        -->
+        <div style="height: 25px;"></div>
+        </row id="selectList" style="width:100%;">
+          <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+          <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+          <style>
+              .select2-container--default .select2-selection__rendered
+              {
+                  font-size: .9rem;
+                  line-height: 1.5 !important; 
+
+                  padding: .375rem .75rem !important;
+
+                  color: #3e4676 !important;
+              }
+
+              .select2-selection
+              {
+                  height: unset !important; 
+
+                  border-color: #d3e0e9 !important;
+              }
+
+              .select2-container--default .select2-selection--single .select2-selection__arrow
+              {
+                  position: absolute;
+                  top: 50%;
+                  right: 1px;
+
+                  width: 20px;
+                  height: unset;
+
+                  transform: translateY(-100%);
+              }
+
+              .select2-container--default:focus
+              {
+                  color: #95aac9;
+                  outline: 0; 
+                  background-color: #fff;
+              }
+
+              .select2-dropdown
+              {
+                  border: 1px solid #d3e0e9;
+                  box-shadow: 0 18px 35px rgba(50, 50, 93, .1), -1px 0 15px rgba(0, 0, 0, .07);
+              }
+
+              .select2-container--default .select2-results__option--highlighted[aria-selected]
+              {
+                  color: #262e4b; 
+                  background-color: #d2ddec;
+              }
+
+              .select2-container--default .select2-results__option[aria-selected=true]
+              {
+                  color: #687ae8; 
+                  background-color: #edf2f9;
+              }
+
+              .select2-container--default .select2-search--dropdown .select2-search__field
+              {
+                  width: 100%;
+                  padding-left: 29px; 
+
+                  border: 0;
+                  border: none;
+                  outline: 0;
+                  background-color: #edf2f9;
+              }
+
+              .select2-container .select2-selection--multiple .select2-selection__rendered
+              {
+                  font-size: 14px !important; 
+
+                  padding: 2px .375rem !important;
+              }
+
+              .select2-search--dropdown:before
+              {
+                  font-family: 'Material Design Icons';
+                  font-size: 18px;
+
+                  position: absolute;
+                  top: 6px;
+                  left: 10px;
+
+                  
+
+                  color: #95aac9;
+              }
+
+              .select2-container--default .select2-selection--multiple .select2-selection__choice
+              {
+                  border: 1px solid transparent;
+                  border-radius: 2px; 
+                  background-color: #e3ebf6;
+              }
+
+              .select2-container--default .select2-selection--multiple .select2-selection__choice__remove
+              {
+                  font-weight: 500; 
+
+                  color: #000;
+              }
+
+              .select2.is-invalid + .select2-container .select2-selection
+              {
+                  border-color: #f2545b !important;
+              }
+
+              .select2.is-valid + .select2-container .select2-selection
+              {
+                  border-color: #0c9 !important;
+              }
+
+          </style>
+          <select class="js-select2" name='icons' id='foodicons' style="width:70%;">
+            <option>apple 1</option>
+            <option>apple</option>
+            <option>asparagus</option>
+            <option>aubergine</option>
+            <option>avocado</option>
+            <option>bacon</option>
+            <option>baguette</option>
+            <option>banana</option>
+            <option>beans</option>
+            <option>biscuit</option>
+            <option>blueberries</option>
+            <option>boiled</option>
+            <option>bowl 1</option>
+            <option>bowl</option>
+            <option>bread 1</option>
+            <option>bread 2</option>
+            <option>bread</option>
+            <option>broccoli</option>
+            <option>butcher</option>
+            <option>butter</option>
+            <option>cabbage</option>
+            <option>cake</option>
+            <option>can 1</option>
+            <option>can 2</option>
+            <option>can</option>
+            <option>candy 1</option>
+            <option>candy</option>
+            <option>carrot</option>
+            <option>cauliflower</option>
+            <option>cereals</option>
+            <option>cheese 1</option>
+            <option>cheese</option>
+            <option>chef</option>
+            <option>cherries</option>
+            <option>chili</option>
+            <option>chips</option>
+            <option>chives</option>
+            <option>chocolate</option>
+            <option>coconut</option>
+            <option>coffee 1</option>
+            <option>coffee 2</option>
+            <option>coffee 3</option>
+            <option>coffee 4</option>
+            <option>coffee maker</option>
+            <option>coffee</option>
+            <option>cookies</option>
+            <option>corckscrew</option>
+            <option>corn</option>
+            <option>corndog</option>
+            <option>croissant</option>
+            <option>cucumber</option>
+            <option>cup</option>
+            <option>cupcake 1</option>
+            <option>cupcake 2</option>
+            <option>cupcake</option>
+            <option>cutlery</option>
+            <option>dairy</option>
+            <option>dish</option>
+            <option>dishes</option>
+            <option>doughnut 1</option>
+            <option>doughnut 2</option>
+            <option>doughnut</option>
+            <option>egg</option>
+            <option>eggs</option>
+            <option>fig</option>
+            <option>fish</option>
+            <option>flour 1</option>
+            <option>flour</option>
+            <option>food</option>
+            <option>fork</option>
+            <option>frappe</option>
+            <option>fries</option>
+            <option>garlic</option>
+            <option>gingerbread</option>
+            <option>glass 1</option>
+            <option>glass 2</option>
+            <option>glass 3</option>
+            <option>glass 4</option>
+            <option>glass 5</option>
+            <option>glass 6</option>
+            <option>glass</option>
+            <option>grain</option>
+            <option>grapes</option>
+            <option>grater</option>
+            <option>grinder</option>
+            <option>groceries</option>
+            <option>ham</option>
+            <option>hamburguer 1</option>
+            <option>hamburguer</option>
+            <option>hazelnut</option>
+            <option>honey 1</option>
+            <option>honey</option>
+            <option>hot dog-1</option>
+            <option>hot dog</option>
+            <option>ice cream-1</option>
+            <option>ice cream-10</option>
+            <option>ice cream-11</option>
+            <option>ice cream-12</option>
+            <option>ice cream-13</option>
+            <option>ice cream-14</option>
+            <option>ice cream-2</option>
+            <option>ice cream-3</option>
+            <option>ice cream-4</option>
+            <option>ice cream-5</option>
+            <option>ice cream-6</option>
+            <option>ice cream-7</option>
+            <option>ice cream-8</option>
+            <option>ice cream-9</option>
+            <option>ice cream</option>
+            <option>jam 1</option>
+            <option>jam</option>
+            <option>jawbreaker</option>
+            <option>jelly</option>
+            <option>kebab 1</option>
+            <option>kebab 2</option>
+            <option>kebab</option>
+            <option>kitchen</option>
+            <option>knife 1</option>
+            <option>knife 2</option>
+            <option>knife 3</option>
+            <option>knife</option>
+            <option>knives</option>
+            <option>ladle</option>
+            <option>lemon 1</option>
+            <option>lemon</option>
+            <option>lime</option>
+            <option>meat 1</option>
+            <option>meat 2</option>
+            <option>meat</option>
+            <option>milk 1</option>
+            <option>milk</option>
+            <option>mixer</option>
+            <option>mug</option>
+            <option>mushroom</option>
+            <option>mushrooms</option>
+            <option>mustard 1</option>
+            <option>mustard 2</option>
+            <option>mustard</option>
+            <option>noodles</option>
+            <option>oat</option>
+            <option>octopus</option>
+            <option>oil</option>
+            <option>olives</option>
+            <option>onion 1</option>
+            <option>onion</option>
+            <option>orange</option>
+            <option>ornating</option>
+            <option>pan</option>
+            <option>pancakes 1</option>
+            <option>pancakes</option>
+            <option>pasta 1</option>
+            <option>pasta</option>
+            <option>peach</option>
+            <option>pear</option>
+            <option>peas</option>
+            <option>pepper 1</option>
+            <option>pepper</option>
+            <option>pickles</option>
+            <option>pie 1</option>
+            <option>pie 2</option>
+            <option>pie</option>
+            <option>pineapple</option>
+            <option>pint</option>
+            <option>pistachio</option>
+            <option>pizza 1</option>
+            <option>pizza 2</option>
+            <option>pizza 3</option>
+            <option>pizza 4</option>
+            <option>pizza 5</option>
+            <option>pizza</option>
+            <option>pomegranate</option>
+            <option>popsicle</option>
+            <option>pot 1</option>
+            <option>pot 2</option>
+            <option>pot</option>
+            <option>potatoes 1</option>
+            <option>potatoes 2</option>
+            <option>potatoes</option>
+            <option>pretzel</option>
+            <option>pudding</option>
+            <option>pumpkin</option>
+            <option>radish</option>
+            <option>raspberry</option>
+            <option>rice</option>
+            <option>risotto</option>
+            <option>rolling pin</option>
+            <option>salad 1</option>
+            <option>salad</option>
+            <option>salami</option>
+            <option>salmon</option>
+            <option>salt</option>
+            <option>sandwich 1</option>
+            <option>sandwich</option>
+            <option>sausage</option>
+            <option>scale</option>
+            <option>seeds</option>
+            <option>shrimp</option>
+            <option>slotted spoon</option>
+            <option>sorbet</option>
+            <option>spaguetti</option>
+            <option>spatula 1</option>
+            <option>spatula</option>
+            <option>spices</option>
+            <option>spoon</option>
+            <option>steak</option>
+            <option>stew 1</option>
+            <option>stew</option>
+            <option>strainer</option>
+            <option>strawberry</option>
+            <option>sushi 1</option>
+            <option>sushi 2</option>
+            <option>sushi</option>
+            <option>taco</option>
+            <option>tea 1</option>
+            <option>tea</option>
+            <option>teapot 1</option>
+            <option>teapot</option>
+            <option>teaspoon</option>
+            <option>tenderizer</option>
+            <option>thermos</option>
+            <option>toast</option>
+            <option>toaster</option>
+            <option>toffee</option>
+            <option>tomato</option>
+            <option>turkey</option>
+            <option>water 1</option>
+            <option>water</option>
+            <option>watermelon</option>
+            <option>whisk</option>
+            <option>wrap</option>
+          </select>
+          <script>
+            // $.fn.modal.Constructor.prototype.enforceFocus = function() {};
+            $('#foodicons').select2({
+              dropdownParent: $('#exampleModal')
+            });
+            $('#foodicons').change(function() {
+              var file = $('#foodicons option:selected').text().replace(' ','-') + '.png';
+              document.getElementById('iconpreview').innerHTML = `<img src='assets/${file}' style="width:50px; height:50px;">`;
+            });
+          </script>
+
+
+          <span id="iconpreview" style="width:20%; float:right; bottom: 15px; position:relative;"> <img src='assets/apple-1.png' style="width:50px; height:50px;position:center;"> </span>
+          
+        </row>
+        <div style="height:30px;"></div>
+      </div>
+      <div class="modal-footer">
+        <script>
+        // something for paul since he doesn't know how to do it
+        function getFormValues() {
+          return {
+            name: $('#produceName').val(),
+            count: {
+              number: Number($('#ammountField').val()),
+              unit: $('#unitField').val()
+            },
+            // expiry_date: $(), good luck with this one
+            icon: $('#foodicons option:selected').text().replace(' ','-')
+          }
+        }
+
+        async function submitChanges() {
+          $.post('/i', getFormValues(), (result) => {
+            console.log(result);
+            // alert('submitted values');
+          });
+          $('#modalClose').click();
+        } 
+
+        </script>
+        <button type="submit" class="btn btn-primary" onclick="submitChanges();">Save changes</button>
+        <button id="modalClose" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <script>
-  $.get( "/i", function( json ) {
-    $(".title" ).html( JSON.stringify(json, null, 2) );
-    alert( "Load was performed." );
-    $.each(json.ingredients, function(idx, ingredient){
-      $(".title" ).html(ingredient.name);
-    });
-
-
-
-  });
+  populateDB();
+  displayProduceList();
 </script>
 </body>
 </html>

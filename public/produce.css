@@ -1,4 +1,4 @@
-@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+</@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
 @import url("https://fonts.googleapis.com/css?family=Bebas+Neue:400");
 
 @font-face {
@@ -11,6 +11,108 @@
 * {
   box-sizing: border-box;
 }
+
+.navigation img {
+  max-height: 45px;
+  max-width: 45px;
+  object-fit: fit; /* keep proportion */
+}
+
+.navigation div {
+  padding-top:24px;
+  padding-bottom:24px;
+}
+.nav-home {
+}
+.nav-produce {
+}
+.nav-groceries {
+}
+
+
+.produce-list-area {
+  position:absolute;
+  left: 140px;
+  top: 100px;
+  width: 810px;
+  height: 450px;
+}
+
+.produce-tile {
+  color: black;
+  font-family: "Bebas Neue", Helvetica;
+  font-style: normal;
+  font-weight: 400;
+  /* background-color: red; */
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 3px 6px rgb(0 0 0 / 16%);
+  padding: 8px;
+  margin: 8px;
+}
+
+.produce-tile:first-child {
+  display:none;
+}
+
+.produce-tile.depleted {
+  opacity: 0.33;
+}
+
+.produce-name {
+  font-size: 22px;
+  display:block; /* force a new line after */
+}
+.produce-image {
+  display:inline;
+  vertical-align:middle;
+  border-style: none;
+  max-height: 45px;
+  max-width: 45px;
+  margin-top: -18px;
+  object-fit: fit; /* keep proportion */
+}
+.produce-count {
+  font-size: 35px;
+  vertical-align:baseline;
+  /*specific*/
+  letter-spacing: 0px;
+  white-space: nowrap;
+  padding-left: 8px;
+}
+
+.produce-unit {
+  font-size: 19px;
+  vertical-align:baseline;
+  /*specific*/
+  letter-spacing: 0px;
+  white-space: nowrap;
+  padding-left: 8px;
+}
+
+.produce-new {
+  color: black;
+  font-family: "Bebas Neue", Helvetica;
+  font-style: normal;
+  font-weight: 400;
+  /* background-color: red; */
+  background-color: rgba(255,255,255,.5);
+  border-radius: 10px;
+  box-shadow: 0px 3px 6px rgb(0 0 0 / 16%);
+  padding: 8px;
+  margin: 8px;
+}
+
+.produce-new:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+.produce-new-tile {
+  padding-left: 44%;
+  font-size: 56;
+}
+
 .bebasneue-normal-black-19px {
   color: black;
   font-family: "Bebas Neue", Helvetica;
@@ -392,11 +494,11 @@
   width: 36px;
 }
 .produce .overlap-group {
-  height: 337px;
-  left: 132px;
+  /* height: 337px; */
+  left: 106px;
   position: absolute;
   top: 117px;
-  width: 862px;
+  /* width: 862px; */
 }
 .produce .overlap-group-1 {
   height: 67px;

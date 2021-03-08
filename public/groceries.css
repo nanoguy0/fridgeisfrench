@@ -1,0 +1,898 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Bebas+Neue:400");
+* {
+  box-sizing: border-box;
+}
+.bebasneue-normal-black-19px {
+  color: black;
+  font-family: "Bebas Neue", Helvetica;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+}
+.bebasneue-normal-black-22px {
+  color: black;
+  font-family: "Bebas Neue", Helvetica;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+}
+.bebasneue-normal-black-35px {
+  color: black;
+  font-family: "Bebas Neue", Helvetica;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+}
+.bebasneue-normal-black-45px {
+  color: black;
+  font-family: "Bebas Neue", Helvetica;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 400;
+}
+.grocery-list {
+  background-color: white;
+  height: 867px;
+  position: relative;
+  width: 1024px;
+}
+.grocery-list .auto-flex {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  min-height: 79px;
+  width: 63px;
+}
+.grocery-list .bg {
+  background-color: var(--star-dust);
+  height: 600px;
+  left: 0px;
+  position: fixed;
+  top: 0px;
+  width: 1024px;
+}
+.grocery-list .bg-1 {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.161);
+  height: 93px;
+  left: 0px;
+  opacity: 0.75;
+  position: absolute;
+  top: 0px;
+  width: 146px;
+}
+.grocery-list .bin {
+  height: 35px;
+  position: relative;
+  width: 35px;
+}
+.grocery-list .bowl {
+  height: 33px;
+  margin-left: 0.02px;
+  margin-top: 45px;
+  opacity: 0.25;
+  position: relative;
+  width: 36px;
+}
+.grocery-list .cover-bar-dark-grey {
+  background-color: var(--star-dust);
+  height: 5px;
+  width: 1024px;
+}
+.grocery-list .cover-bar-grey {
+  align-self: flex-end;
+  background: linear-gradient(180deg, #ececec 0%, #ececec 71.96%, rgba(236, 236, 236, 0) 100%);
+  border-radius: 32px;
+  height: 122px;
+  margin-right: 21px;
+  width: 916px;
+}
+.grocery-list .cover-bar-white {
+  background-color: white;
+  border-radius: 32px;
+  height: 7px;
+  margin-left: 42px;
+  width: 916px;
+}
+.grocery-list .cover-bar-white-bottom {
+  background-color: white;
+  border-radius: 32px;
+  height: 7px;
+  margin-left: 62px;
+  margin-top: 454px;
+  width: 894px;
+}
+.grocery-list .cover-bars {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  left: 0px;
+  min-height: 600px;
+  position: fixed;
+  top: 0px;
+  width: 1024px;
+}
+.grocery-list .ellipse-391 {
+  background-color: var(--royal-blue);
+  border-radius: 15.63752555847168px;
+  height: 31px;
+  left: 19px;
+  position: absolute;
+  top: 19px;
+  width: 31px;
+}
+.grocery-list .ellipse-392 {
+  background-color: var(--oxford-blue);
+  border-radius: 2.1968984603881836px;
+  height: 4px;
+  left: -7px;
+  position: absolute;
+  top: 19px;
+  width: 4px;
+}
+.grocery-list .groceries {
+  align-items: flex-start;
+  display: flex;
+  margin-left: 0.02px;
+  margin-top: 44px;
+  min-width: 36px;
+  opacity: 0.25;
+}
+.grocery-list .group-529 {
+  align-items: flex-start;
+  display: flex;
+  height: 8px;
+  left: 19px;
+  min-width: 9px;
+  position: absolute;
+  top: 24px;
+}
+.grocery-list .header {
+  align-items: flex-start;
+  display: flex;
+  height: 64px;
+  left: 104px;
+  min-width: 840px;
+  position: fixed;
+  top: 40px;
+}
+.grocery-list .header-1 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  left: 0px;
+  min-height: 64px;
+  position: absolute;
+  top: 0px;
+  width: 840px;
+}
+.grocery-list .house {
+  align-items: flex-end;
+  display: flex;
+  min-width: 36px;
+  opacity: 0.25;
+  padding: 0px 0;
+}
+.grocery-list .inner-square {
+  background-color: var(--cararra);
+  border-radius: 32px;
+  height: 576px;
+  left: 75px;
+  position: fixed;
+  top: 12px;
+  width: 939px;
+}
+.grocery-list .invoice {
+  align-items: flex-start;
+  background-image: url(https://anima-uploads.s3.amazonaws.com/projects/603fed2c1ade8617800e613e/releases/603fed5b179367c8bbc15e0e/img/path-2241@1x.png);
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 45px;
+  min-height: 47px;
+  padding: 15.9px 6.4px;
+  width: 36px;
+}
+.grocery-list .mask-group-6 {
+  align-items: flex-start;
+  display: flex;
+  height: 50px;
+  left: 0px;
+  padding: 0 3.4px;
+  position: absolute;
+  top: 0px;
+  width: 63px;
+}
+.grocery-list .mask-group-7 {
+  align-items: flex-end;
+  display: flex;
+  height: 50px;
+  overflow: hidden;
+  padding: 0 6.7px;
+  width: 63px;
+}
+.grocery-list .navigation {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  left: 22px;
+  min-height: 298px;
+  position: fixed;
+  top: 151px;
+  width: 36px;
+}
+.grocery-list .overlap-group {
+  height: 50px;
+  left: 6px;
+  position: absolute;
+  top: 33px;
+  width: 63px;
+}
+.grocery-list .overlap-group-1 {
+  align-items: flex-start;
+  background-image: url(https://anima-uploads.s3.amazonaws.com/projects/603fed2c1ade8617800e613e/releases/603fed5b179367c8bbc15e0e/img/path-2302@1x.png);
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: -0px;
+  min-height: 50px;
+  padding: 3.3px 1.3px;
+  width: 50px;
+}
+.grocery-list .overlap-group-2 {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.161);
+  height: 93px;
+  position: relative;
+  width: 146px;
+}
+.grocery-list .overlap-group-3 {
+  height: 35px;
+  left: -0px;
+  position: absolute;
+  top: -0px;
+  width: 35px;
+}
+.grocery-list .overlap-group-4 {
+  height: 18px;
+  left: -0px;
+  position: absolute;
+  top: 15px;
+  width: 36px;
+}
+.grocery-list .overlap-group1 {
+  height: 67px;
+  left: 10px;
+  position: absolute;
+  top: 4px;
+  width: 105px;
+}
+.grocery-list .overlap-group1-1 {
+  height: 28px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 30px;
+}
+.grocery-list .overlap-group1-2 {
+  height: 46px;
+  margin-top: -0px;
+  position: relative;
+  width: 36px;
+}
+.grocery-list .overlap-group2 {
+  height: 50px;
+  margin-top: -0px;
+  position: relative;
+  width: 56px;
+}
+.grocery-list .overlap-group2-1 {
+  align-self: flex-end;
+  height: 28px;
+  margin-top: 1px;
+  position: relative;
+  width: 37px;
+}
+.grocery-list .overlap-group2-2 {
+  height: 36px;
+  position: relative;
+  width: 36px;
+}
+.grocery-list .overlap-group3 {
+  align-items: flex-start;
+  background-image: url(https://anima-uploads.s3.amazonaws.com/projects/603fed2c1ade8617800e613e/releases/603fed5b179367c8bbc15e0e/img/rectangle-57@1x.png);
+  background-size: 100% 100%;
+  display: flex;
+  min-width: 63px;
+}
+.grocery-list .overlap-group4 {
+  align-self: center;
+  height: 48px;
+  margin-left: 4px;
+  margin-top: 1px;
+  position: relative;
+  width: 42px;
+}
+.grocery-list .overlap-group5 {
+  height: 64px;
+  position: relative;
+  width: 840px;
+}
+.grocery-list .path-127 {
+  height: 4px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 36px;
+}
+.grocery-list .path-128 {
+  height: 16px;
+  left: 0px;
+  position: absolute;
+  top: 2px;
+  width: 36px;
+}
+.grocery-list .path-129 {
+  height: 6px;
+  left: 7px;
+  position: absolute;
+  top: 12px;
+  width: 11px;
+}
+.grocery-list .path-130 {
+  height: 2px;
+  left: 4px;
+  position: absolute;
+  top: 9px;
+  width: 2px;
+}
+.grocery-list .path-131 {
+  height: 12px;
+  left: 19px;
+  position: absolute;
+  top: 0px;
+  width: 10px;
+}
+.grocery-list .path-132 {
+  height: 15px;
+  left: 1px;
+  position: absolute;
+  top: 0px;
+  width: 17px;
+}
+.grocery-list .path-2233 {
+  height: 31px;
+  left: 3px;
+  position: absolute;
+  top: 5px;
+  width: 29px;
+}
+.grocery-list .path-2234 {
+  height: 19px;
+  left: 3px;
+  position: absolute;
+  top: 5px;
+  width: 29px;
+}
+.grocery-list .path-2235 {
+  height: 13px;
+  left: 6px;
+  position: absolute;
+  top: 23px;
+  width: 9px;
+}
+.grocery-list .path-2236 {
+  height: 20px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 36px;
+}
+.grocery-list .path-224 {
+  height: 2px;
+  margin-top: 4px;
+  width: 23px;
+}
+.grocery-list .path-2243 {
+  height: 2px;
+  width: 13px;
+}
+.grocery-list .path-2288 {
+  height: 28px;
+  left: 27px;
+  position: absolute;
+  top: 0px;
+  width: 29px;
+}
+.grocery-list .path-2289 {
+  height: 29px;
+  left: 0px;
+  position: absolute;
+  top: 9px;
+  width: 29px;
+}
+.grocery-list .path-2290 {
+  height: 5px;
+  left: 29px;
+  position: absolute;
+  top: 26px;
+  width: 10px;
+}
+.grocery-list .path-2291 {
+  height: 5px;
+  left: 27px;
+  position: absolute;
+  top: 22px;
+  width: 7px;
+}
+.grocery-list .path-2292 {
+  height: 5px;
+  left: 34px;
+  position: absolute;
+  top: 22px;
+  width: 7px;
+}
+.grocery-list .path-2293 {
+  height: 5px;
+  left: 9px;
+  position: absolute;
+  top: 15px;
+  width: 10px;
+}
+.grocery-list .path-2294 {
+  height: 5px;
+  left: 7px;
+  position: absolute;
+  top: 11px;
+  width: 7px;
+}
+.grocery-list .path-2295 {
+  height: 5px;
+  left: 14px;
+  position: absolute;
+  top: 11px;
+  width: 7px;
+}
+.grocery-list .path-2296 {
+  height: 5px;
+  left: 36px;
+  position: absolute;
+  top: 6px;
+  width: 10px;
+}
+.grocery-list .path-2297 {
+  height: 5px;
+  left: 34px;
+  position: absolute;
+  top: 2px;
+  width: 7px;
+}
+.grocery-list .path-2298 {
+  height: 5px;
+  left: 42px;
+  position: absolute;
+  top: 2px;
+  width: 7px;
+}
+.grocery-list .path-2299 {
+  height: 11px;
+  left: 3px;
+  position: absolute;
+  top: 20px;
+  width: 5px;
+}
+.grocery-list .path-2300 {
+  height: 11px;
+  left: 21px;
+  position: absolute;
+  top: 32px;
+  width: 5px;
+}
+.grocery-list .path-2301 {
+  height: 12px;
+  left: 29px;
+  position: absolute;
+  top: 7px;
+  width: 4px;
+}
+.grocery-list .path-2303 {
+  height: 18px;
+  left: -4px;
+  position: absolute;
+  top: 11px;
+  width: 18px;
+}
+.grocery-list .path-2304 {
+  height: 18px;
+  left: -1px;
+  position: absolute;
+  top: 7px;
+  width: 18px;
+}
+.grocery-list .path-2305 {
+  height: 18px;
+  left: 2px;
+  position: absolute;
+  top: 4px;
+  width: 18px;
+}
+.grocery-list .path-2306 {
+  height: 18px;
+  left: 6px;
+  position: absolute;
+  top: -0px;
+  width: 18px;
+}
+.grocery-list .path-2307 {
+  height: 11px;
+  margin-left: 5.5px;
+  width: 9px;
+}
+.grocery-list .path-2308 {
+  height: 10px;
+  left: 25px;
+  position: absolute;
+  top: 16px;
+  width: 12px;
+}
+.grocery-list .path-2368 {
+  height: 35px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 28px;
+}
+.grocery-list .path-2369 {
+  height: 17px;
+  left: 15px;
+  position: absolute;
+  top: 15px;
+  width: 4px;
+}
+.grocery-list .path-2370 {
+  height: 17px;
+  left: 11px;
+  position: absolute;
+  top: 15px;
+  width: 4px;
+}
+.grocery-list .path-2371 {
+  height: 17px;
+  left: 20px;
+  position: absolute;
+  top: 15px;
+  width: 4px;
+}
+.grocery-list .path-2372 {
+  height: 5px;
+  left: 15px;
+  position: absolute;
+  top: 6px;
+  width: 6px;
+}
+.grocery-list .path-2373 {
+  height: 5px;
+  left: 23px;
+  position: absolute;
+  top: 4px;
+  width: 6px;
+}
+.grocery-list .path-2374 {
+  height: 1px;
+  left: 24px;
+  position: absolute;
+  top: 0px;
+  width: 1px;
+}
+.grocery-list .path-2375 {
+  height: 2px;
+  left: 29px;
+  position: absolute;
+  top: 2px;
+  width: 6px;
+}
+.grocery-list .path-2376 {
+  height: 1px;
+  left: 32px;
+  position: absolute;
+  top: 6px;
+  width: 1px;
+}
+.grocery-list .path-2377 {
+  height: 3px;
+  left: 26px;
+  position: absolute;
+  top: 0px;
+  width: 3px;
+}
+.grocery-list .path-805 {
+  height: 4px;
+  left: 0px;
+  position: absolute;
+  top: 13px;
+  width: 5px;
+}
+.grocery-list .path-806 {
+  height: 24px;
+  left: 5px;
+  position: absolute;
+  top: 0px;
+  width: 19px;
+}
+.grocery-list .path-807 {
+  height: 23px;
+  left: 20px;
+  position: absolute;
+  top: 0px;
+  width: 16px;
+}
+.grocery-list .path-808 {
+  height: 9px;
+  left: 0px;
+  position: absolute;
+  top: 14px;
+  width: 13px;
+}
+.grocery-list .path-809 {
+  height: 5px;
+  left: 24px;
+  position: absolute;
+  top: 16px;
+  width: 8px;
+}
+.grocery-list .path-810 {
+  height: 5px;
+  left: 26px;
+  position: absolute;
+  top: 10px;
+  width: 8px;
+}
+.grocery-list .path-811 {
+  height: 4px;
+  left: 28px;
+  position: absolute;
+  top: 5px;
+  width: 7px;
+}
+.grocery-list .path-812 {
+  height: 16px;
+  left: 13px;
+  position: absolute;
+  top: 7px;
+  width: 11px;
+}
+.grocery-list .path-813 {
+  height: 4px;
+  left: 13px;
+  position: absolute;
+  top: 6px;
+  width: 8px;
+}
+.grocery-list .path-814 {
+  height: 25px;
+  left: 0px;
+  position: absolute;
+  top: 21px;
+  width: 34px;
+}
+.grocery-list .path-815 {
+  height: 2px;
+  left: 3px;
+  position: absolute;
+  top: 33px;
+  width: 8px;
+}
+.grocery-list .path-816 {
+  height: 2px;
+  left: 3px;
+  position: absolute;
+  top: 37px;
+  width: 9px;
+}
+.grocery-list .path-817 {
+  height: 2px;
+  left: 3px;
+  position: absolute;
+  top: 40px;
+  width: 11px;
+}
+.grocery-list .path-818 {
+  height: 2px;
+  left: 16px;
+  position: absolute;
+  top: 40px;
+  width: 3px;
+}
+.grocery-list .quantity {
+  height: 45px;
+  left: 63px;
+  letter-spacing: 0px;
+  line-height: 83px;
+  position: absolute;
+  top: 19px;
+  white-space: nowrap;
+  width: 28px;
+}
+.grocery-list .quantity-1 {
+  height: 45px;
+  left: 0px;
+  letter-spacing: 0px;
+  line-height: 83px;
+  position: absolute;
+  top: 0px;
+  white-space: nowrap;
+  width: 28px;
+}
+.grocery-list .quantity-2 {
+  height: 21px;
+  left: 63px;
+  position: absolute;
+  top: 36px;
+  width: 21px;
+}
+.grocery-list .rectangle-204 {
+  background-color: var(--ogre-odor);
+  height: 7px;
+  left: 27px;
+  position: absolute;
+  top: 5px;
+  width: 4px;
+}
+.grocery-list .rectangle-205 {
+  background-color: var(--bittersweet);
+  height: 4px;
+  left: 25px;
+  position: absolute;
+  top: 2px;
+  width: 7px;
+}
+.grocery-list .rectangle-206 {
+  background-color: var(--pickled-bluewood);
+  height: 10px;
+  left: 18px;
+  position: absolute;
+  top: 23px;
+  width: 12px;
+}
+.grocery-list .rectangle-207 {
+  background-color: var(--sky-blue);
+  height: 8px;
+  width: 4px;
+}
+.grocery-list .rectangle-208 {
+  background-color: var(--sky-blue);
+  height: 8px;
+  margin-left: 1px;
+  width: 4px;
+}
+.grocery-list .rectangle-57 {
+  height: 50px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 63px;
+}
+.grocery-list .repeat-grid-2 {
+  align-items: flex-start;
+  display: flex;
+  height: 111px;
+  min-width: 354px;
+  padding: 6px 9px;
+}
+.grocery-list .second-bg {
+  background-color: white;
+  border-radius: 32px;
+  height: 590px;
+  left: 8px;
+  position: fixed;
+  top: 5px;
+  width: 1011px;
+}
+.grocery-list .separator {
+  align-self: flex-end;
+  height: 1px;
+  margin-top: 16px;
+  width: 804px;
+}
+.grocery-list .tile {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.161);
+  height: 93px;
+  position: relative;
+  width: 146px;
+}
+.grocery-list .tile-1 {
+  align-items: flex-start;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.161);
+  display: flex;
+  height: 93px;
+  margin-left: 38px;
+  min-width: 146px;
+  padding: 4px 6px;
+}
+.grocery-list .tile-new {
+  align-items: flex-start;
+  background-color: white;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.161);
+  display: flex;
+  margin-left: 9px;
+  margin-top: 8px;
+  min-width: 146px;
+}
+.grocery-list .tiles {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  left: 131px;
+  min-height: 212px;
+  position: absolute;
+  top: 114px;
+  width: 354px;
+}
+.grocery-list .title {
+  left: 0px;
+  letter-spacing: 0px;
+  line-height: 31px;
+  position: absolute;
+  top: 0px;
+  white-space: nowrap;
+}
+.grocery-list .title-1 {
+  letter-spacing: 0px;
+  line-height: 31px;
+  margin-bottom: -2px;
+  margin-left: 4px;
+  min-height: 29px;
+  white-space: nowrap;
+}
+.grocery-list .title-2 {
+  letter-spacing: 0px;
+  line-height: 63.6px;
+  margin-top: -9px;
+  min-height: 57px;
+  text-align: center;
+  white-space: nowrap;
+  width: 188px;
+}
+.grocery-list .trash {
+  align-items: flex-end;
+  display: flex;
+  height: 48px;
+  left: 803px;
+  padding: 6.3px 0.1px;
+  position: absolute;
+  top: 8px;
+  width: 35px;
+}
+.grocery-list .unit {
+  left: 89px;
+  letter-spacing: 0px;
+  line-height: 55px;
+  position: absolute;
+  top: 42px;
+  white-space: nowrap;
+}
+.grocery-list .unit-1 {
+  left: 26px;
+  letter-spacing: 0px;
+  line-height: 55px;
+  position: absolute;
+  top: 23px;
+  white-space: nowrap;
+}
+:root {
+  --bittersweet: rgba(243, 112, 90, 1);
+  --cararra: rgba(236, 236, 236, 1);
+  --ogre-odor: rgba(240, 85, 64, 1);
+  --oxford-blue: rgba(56, 69, 79, 1);
+  --pickled-bluewood: rgba(52, 74, 94, 1);
+  --royal-blue: rgba(65, 92, 206, 1);
+  --sky-blue: rgba(138, 215, 248, 1);
+  --star-dust: rgba(158, 158, 157, 1);
+}

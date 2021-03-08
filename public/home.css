@@ -1,0 +1,712 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Bebas+Neue:400");
+
+@font-face {
+  font-family: "Corbel-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://fonts.animaapp.com/Corbel-Regular") format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+}
+.bebasneue-normal-black-15px {
+  color: black;
+  font-family: "Bebas Neue", Helvetica;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+}
+.bebasneue-normal-black-35px {
+  color: black;
+  font-family: "Bebas Neue", Helvetica;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+}
+.bebasneue-normal-black-45px {
+  color: black;
+  font-family: "Bebas Neue", Helvetica;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 400;
+}
+.corbel-regular-normal-black-15px {
+  color: black;
+  font-family: "Corbel-Regular", Helvetica;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+}
+.home {
+  background-color: white;
+  height: 913px;
+  position: relative;
+  width: 1024px;
+}
+.home .address {
+  height: 197px;
+  left: 0px;
+  letter-spacing: 0px;
+  line-height: 20px;
+  position: absolute;
+  top: 0px;
+  width: 311px;
+}
+.home .as-white-bean-t-rticle-large-v2 {
+  border-radius: 18px;
+  height: 259px;
+  width: 584px;
+}
+.home .auto-flex {
+  align-items: flex-start;
+  display: flex;
+  height: 45px;
+  margin-top: -20px;
+  min-width: 529px;
+}
+.home .auto-flex1 {
+  align-items: flex-start;
+  display: flex;
+  margin-left: 4px;
+  margin-top: 25px;
+  min-width: 210px;
+}
+.home .avocado-toast {
+  left: 0px;
+  letter-spacing: 0px;
+  line-height: 63.6px;
+  position: absolute;
+  text-align: center;
+  top: 40px;
+  white-space: nowrap;
+  width: 293px;
+}
+.home .bg {
+  background-color: var(--star-dust);
+  height: 600px;
+  left: 0px;
+  position: fixed;
+  top: 0px;
+  width: 1024px;
+}
+.home .bowl {
+  height: 33px;
+  margin-left: 0.02px;
+  margin-top: 45px;
+  opacity: 0.25;
+  position: relative;
+  width: 36px;
+}
+.home .breakfast {
+  left: 0px;
+  letter-spacing: 0px;
+  line-height: 63.6px;
+  position: absolute;
+  text-align: center;
+  top: 0px;
+  white-space: nowrap;
+  width: 75px;
+}
+.home .component-14-1 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  left: 117px;
+  min-height: 296px;
+  position: absolute;
+  top: 126px;
+  width: 594px;
+}
+.home .cover-bar-dark-grey {
+  background-color: var(--star-dust);
+  height: 5px;
+  width: 1024px;
+}
+.home .cover-bar-grey {
+  align-self: flex-start;
+  background: linear-gradient(180deg, #ececec 0%, #ececec 71.96%, rgba(236, 236, 236, 0) 100%);
+  border-radius: 32px;
+  height: 122px;
+  margin-left: 87px;
+  width: 669px;
+}
+.home .cover-bar-white {
+  background-color: white;
+  border-radius: 32px;
+  height: 7px;
+  margin-left: 42px;
+  width: 916px;
+}
+.home .cover-bar-white-bottom {
+  background-color: white;
+  border-radius: 32px;
+  height: 7px;
+  margin-left: 36px;
+  margin-top: 454px;
+  width: 920px;
+}
+.home .cover-bars {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  left: 0px;
+  min-height: 600px;
+  position: fixed;
+  top: 0px;
+  width: 1024px;
+}
+.home .date {
+  left: 291px;
+  letter-spacing: 0px;
+  line-height: 63.6px;
+  position: absolute;
+  text-align: center;
+  top: 40px;
+  white-space: nowrap;
+  width: 293px;
+}
+.home .dim-bg {
+  background-color: var(--pumice);
+  border-radius: 21px;
+  height: 115px;
+  left: 10px;
+  opacity: 0.19;
+  position: absolute;
+  top: 18px;
+  width: 271px;
+}
+.home .dim-bg-1 {
+  height: 115px;
+  left: 301px;
+  position: absolute;
+  top: 18px;
+  width: 271px;
+}
+.home .dinner {
+  left: 146px;
+  letter-spacing: 0px;
+  line-height: 63.6px;
+  position: absolute;
+  text-align: center;
+  top: 0px;
+  white-space: nowrap;
+  width: 75px;
+}
+.home .eat-soon {
+  left: 760px;
+  letter-spacing: 0px;
+  line-height: 63.6px;
+  position: fixed;
+  text-align: center;
+  top: 33px;
+  white-space: nowrap;
+  width: 261px;
+}
+.home .groceries {
+  align-items: flex-end;
+  display: flex;
+  margin-left: 0.02px;
+  margin-top: 44px;
+  min-width: 36px;
+  opacity: 0.25;
+}
+.home .group-529 {
+  align-items: flex-start;
+  display: flex;
+  height: 8px;
+  left: 19px;
+  min-width: 9px;
+  position: absolute;
+  top: 24px;
+}
+.home .group-536 {
+  background-image: url(https://anima-uploads.s3.amazonaws.com/projects/603fed2c1ade8617800e613e/releases/603fed5b179367c8bbc15e0e/img/path-2241@1x.png);
+  background-size: 100% 100%;
+  height: 47px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 36px;
+}
+.home .horizontal-seperator {
+  height: 2px;
+  left: 9px;
+  position: absolute;
+  top: 2px;
+  width: 563px;
+}
+.home .house {
+  align-items: flex-start;
+  display: flex;
+  min-width: 36px;
+}
+.home .info {
+  align-items: flex-start;
+  display: flex;
+  height: 130px;
+  left: 129px;
+  min-width: 584px;
+  position: absolute;
+  top: 444px;
+}
+.home .ingredients {
+  letter-spacing: 0px;
+  line-height: 83px;
+  min-height: 45px;
+  min-width: 139px;
+  white-space: nowrap;
+}
+.home .inner-square {
+  background-color: var(--cararra);
+  border-radius: 32px;
+  height: 874px;
+  left: 76px;
+  position: absolute;
+  top: 12px;
+  width: 685px;
+}
+.home .instructions {
+  letter-spacing: 0px;
+  line-height: 83px;
+  margin-left: 238px;
+  min-height: 45px;
+  min-width: 152px;
+  text-align: center;
+  white-space: nowrap;
+}
+.home .invoice {
+  align-items: flex-start;
+  display: flex;
+  margin-top: 45px;
+  min-width: 36px;
+  opacity: 0.25;
+}
+.home .lunch {
+  left: 73px;
+  letter-spacing: 0px;
+  line-height: 63.6px;
+  position: absolute;
+  text-align: center;
+  top: 0px;
+  white-space: nowrap;
+  width: 75px;
+}
+.home .meal-seperator {
+  height: 1px;
+  width: 66px;
+}
+.home .meal-seperator-1 {
+  height: 1px;
+  margin-left: 5px;
+  width: 66px;
+}
+.home .meal-seperator-2 {
+  height: 1px;
+  margin-left: 7px;
+  width: 66px;
+}
+.home .navigation {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  left: 22px;
+  min-height: 298px;
+  position: fixed;
+  top: 151px;
+  width: 36px;
+}
+.home .overlap-group {
+  height: 886px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 761px;
+}
+.home .overlap-group1 {
+  height: 197px;
+  margin-top: 47px;
+  position: relative;
+  width: 609px;
+}
+.home .overlap-group1-1 {
+  align-items: flex-start;
+  background-image: url(https://anima-uploads.s3.amazonaws.com/projects/603fed2c1ade8617800e613e/releases/603fed5b179367c8bbc15e0e/img/as-white-bean-tomato-articlelarge-v2-1@1x.png);
+  background-size: 100% 100%;
+  display: flex;
+  height: 390px;
+  margin-top: -58px;
+  min-width: 584px;
+  padding: 58px 0;
+}
+.home .overlap-group1-2 {
+  height: 47px;
+  position: relative;
+  width: 36px;
+}
+.home .overlap-group2 {
+  height: 133px;
+  margin-top: -2.8px;
+  position: relative;
+  width: 584px;
+}
+.home .overlap-group2-1 {
+  align-items: flex-start;
+  background-image: url(https://anima-uploads.s3.amazonaws.com/projects/603fed2c1ade8617800e613e/releases/603fed5b179367c8bbc15e0e/img/avocado-toast-recipe-1200@1x.png);
+  background-size: 100% 100%;
+  display: flex;
+  height: 390px;
+  margin-top: -58px;
+  min-width: 584px;
+  padding: 58px 0;
+}
+.home .overlap-group2-2 {
+  height: 18px;
+  left: -0px;
+  position: absolute;
+  top: 15px;
+  width: 36px;
+}
+.home .overlap-group3 {
+  height: 21px;
+  margin-top: -24px;
+  position: relative;
+  width: 221px;
+}
+.home .overlap-group3-1 {
+  height: 46px;
+  margin-bottom: -0px;
+  position: relative;
+  width: 36px;
+}
+.home .overlap-group4 {
+  align-self: flex-end;
+  height: 259px;
+  margin-top: 14px;
+  position: relative;
+  width: 584px;
+}
+.home .overlap-group4-1 {
+  height: 36px;
+  margin-top: -0px;
+  position: relative;
+  width: 36px;
+}
+.home .overlap-group4-item {
+  align-items: flex-start;
+  display: flex;
+  height: 259px;
+  left: 0px;
+  min-width: 584px;
+  position: absolute;
+  top: 0px;
+}
+.home .overlap-group5 {
+  align-items: flex-start;
+  background-image: url(https://anima-uploads.s3.amazonaws.com/projects/603fed2c1ade8617800e613e/releases/603fed5b179367c8bbc15e0e/img/avocado-toast-recipe-1200-1@1x.png);
+  background-size: 100% 100%;
+  display: flex;
+  height: 390px;
+  margin-top: -58px;
+  min-width: 584px;
+  padding: 58px 0;
+}
+.home .pasta-alla-norma-recipe-3 {
+  border-radius: 18px;
+  height: 259px;
+  width: 584px;
+}
+.home .path-127 {
+  height: 4px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 36px;
+}
+.home .path-128 {
+  height: 16px;
+  left: 0px;
+  position: absolute;
+  top: 2px;
+  width: 36px;
+}
+.home .path-129 {
+  height: 6px;
+  left: 7px;
+  position: absolute;
+  top: 12px;
+  width: 11px;
+}
+.home .path-130 {
+  height: 2px;
+  left: 4px;
+  position: absolute;
+  top: 9px;
+  width: 2px;
+}
+.home .path-131 {
+  height: 12px;
+  left: 19px;
+  position: absolute;
+  top: 0px;
+  width: 10px;
+}
+.home .path-132 {
+  height: 15px;
+  left: 1px;
+  position: absolute;
+  top: -0px;
+  width: 17px;
+}
+.home .path-2233 {
+  height: 31px;
+  left: 3px;
+  position: absolute;
+  top: 5px;
+  width: 29px;
+}
+.home .path-2234 {
+  height: 19px;
+  left: 3px;
+  position: absolute;
+  top: 5px;
+  width: 29px;
+}
+.home .path-2235 {
+  height: 13px;
+  left: 6px;
+  position: absolute;
+  top: 23px;
+  width: 9px;
+}
+.home .path-2236 {
+  height: 20px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 36px;
+}
+.home .path-2242 {
+  height: 2px;
+  left: 6px;
+  position: absolute;
+  top: 22px;
+  width: 23px;
+}
+.home .path-2243 {
+  height: 2px;
+  left: 6px;
+  position: absolute;
+  top: 16px;
+  width: 13px;
+}
+.home .path-2244 {
+  height: 2px;
+  left: 6px;
+  position: absolute;
+  top: 29px;
+  width: 23px;
+}
+.home .path-805 {
+  height: 4px;
+  left: 0px;
+  position: absolute;
+  top: 13px;
+  width: 5px;
+}
+.home .path-806 {
+  height: 24px;
+  left: 5px;
+  position: absolute;
+  top: 0px;
+  width: 19px;
+}
+.home .path-807 {
+  height: 23px;
+  left: 20px;
+  position: absolute;
+  top: 0px;
+  width: 16px;
+}
+.home .path-808 {
+  height: 9px;
+  left: 0px;
+  position: absolute;
+  top: 14px;
+  width: 13px;
+}
+.home .path-809 {
+  height: 5px;
+  left: 24px;
+  position: absolute;
+  top: 16px;
+  width: 8px;
+}
+.home .path-810 {
+  height: 5px;
+  left: 26px;
+  position: absolute;
+  top: 10px;
+  width: 8px;
+}
+.home .path-811 {
+  height: 4px;
+  left: 28px;
+  position: absolute;
+  top: 5px;
+  width: 7px;
+}
+.home .path-812 {
+  height: 16px;
+  left: 13px;
+  position: absolute;
+  top: 7px;
+  width: 11px;
+}
+.home .path-813 {
+  height: 4px;
+  left: 13px;
+  position: absolute;
+  top: 6px;
+  width: 8px;
+}
+.home .path-814 {
+  height: 25px;
+  left: 0px;
+  position: absolute;
+  top: 21px;
+  width: 34px;
+}
+.home .path-815 {
+  height: 2px;
+  left: 3px;
+  position: absolute;
+  top: 33px;
+  width: 8px;
+}
+.home .path-816 {
+  height: 2px;
+  left: 3px;
+  position: absolute;
+  top: 37px;
+  width: 9px;
+}
+.home .path-817 {
+  height: 2px;
+  left: 3px;
+  position: absolute;
+  top: 40px;
+  width: 11px;
+}
+.home .path-818 {
+  height: 2px;
+  left: 16px;
+  position: absolute;
+  top: 40px;
+  width: 3px;
+}
+.home .recepie {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  left: 105px;
+  min-height: 270px;
+  position: absolute;
+  top: 611px;
+  width: 609px;
+}
+.home .rectangle-204 {
+  background-color: var(--ogre-odor);
+  height: 7px;
+  left: 27px;
+  position: absolute;
+  top: 5px;
+  width: 4px;
+}
+.home .rectangle-205 {
+  background-color: var(--bittersweet);
+  height: 4px;
+  left: 25px;
+  position: absolute;
+  top: 2px;
+  width: 7px;
+}
+.home .rectangle-206 {
+  background-color: var(--pickled-bluewood);
+  height: 10px;
+  left: 18px;
+  position: absolute;
+  top: 23px;
+  width: 12px;
+}
+.home .rectangle-207 {
+  background-color: var(--sky-blue);
+  height: 8px;
+  width: 4px;
+}
+.home .rectangle-208 {
+  background-color: var(--sky-blue);
+  height: 8px;
+  margin-left: 1px;
+  width: 4px;
+}
+.home .second-bg {
+  background-color: white;
+  border-radius: 32px;
+  height: 590px;
+  left: 8px;
+  position: fixed;
+  top: 5px;
+  width: 1011px;
+}
+.home .surname {
+  left: 291px;
+  letter-spacing: 0px;
+  line-height: 63.6px;
+  position: absolute;
+  text-align: center;
+  top: 0px;
+  white-space: nowrap;
+  width: 293px;
+}
+.home .time {
+  left: 127px;
+  letter-spacing: 0px;
+  line-height: 63.6px;
+  position: fixed;
+  top: 36px;
+  white-space: nowrap;
+  width: 191px;
+}
+.home .toast-2-slices-of-wh {
+  height: 183px;
+  left: 298px;
+  letter-spacing: 0px;
+  line-height: 20px;
+  position: absolute;
+  text-align: center;
+  top: 0px;
+  width: 311px;
+}
+.home .vertical-seperator {
+  height: 116px;
+  left: 290px;
+  position: absolute;
+  top: 17px;
+  width: 1px;
+}
+.home .x190515173104-03-avacado-toast-1 {
+  border-radius: 18px;
+  height: 259px;
+  width: 584px;
+}
+:root {
+  --bittersweet: rgba(243, 112, 90, 1);
+  --cararra: rgba(236, 236, 236, 1);
+  --ogre-odor: rgba(240, 85, 64, 1);
+  --pickled-bluewood: rgba(52, 74, 94, 1);
+  --pumice: rgba(200, 200, 200, 1);
+  --sky-blue: rgba(138, 215, 248, 1);
+  --star-dust: rgba(158, 158, 157, 1);
+}
