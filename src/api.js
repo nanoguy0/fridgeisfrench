@@ -141,7 +141,7 @@ router
         ingredient = (
           await knex("ingredients")
             .update({
-              ammount: req.body.count.number || ingredient.ammount,
+              ammount: (req.body.count.number == 0) ? 0 : req.body.count.number ||  ingredient.ammount,
               unit: req.body.count.unit || ingredient.unit,
               expiry_date: req.body.expiry_date || ingredient.expiry_date,
               icon: req.body.icon || ingredient.icon,
