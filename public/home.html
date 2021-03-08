@@ -15,6 +15,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="home.css">
   <link rel="stylesheet" href="produce.css">
+	<script src="/fridgebrain.js"></script>
 </head>
 
 <body>
@@ -106,7 +107,24 @@
   </div>
   <h1 id="timeheader" class="time bebasneue-normal-black-45px">9:00 AM</h1>
   <script>$('#timeheader').text(moment().format('ddd, MMM  Do, h:mm a'));setInterval(() => $('#timeheader').text(moment().format('ddd, MMM  Do, h:mm a')), 60000);</script>
-  <div class="eat-soon bebasneue-normal-black-45px">Eat Soon</div>
+  <div class="eat-soon bebasneue-normal-black-45px">Eat Soon
+	</div>
+		<div class="eat-soon-list">
+		
+		<div class="produce-row row" style="text-align:center">
+        <div class="produce-tile col-md-8">
+            <span class="produce-name">NAME</span>
+            <img class="produce-image" src="assets/tomato.png"></img>
+            <span class="produce-count">0</span><span class="produce-unit">TONS</span>
+        </div>
+					
+        <div class="produce-new col-md-8" style="display:none;">
+            <span class="produce-new-tile">+</span>
+        </div>
+				<p id="emptyWarning" style="display: none; top: 50px; left: 50px;">Nothing here!</p>
+      
+    </div>
+		</div>
   <div class="navigation">
     <div class="nav-home">
       <a href="home.html"><img style="filter: saturate(10) contrast(2);" src="assets/nav-house.png"/></a>
@@ -119,5 +137,11 @@
     </div>
   </div>
 </div>
+<script>
+	displayProduceAtExpire();
+
+</script>
+
 </body>
+
 </html>

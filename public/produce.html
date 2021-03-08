@@ -17,7 +17,10 @@
     integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
     crossorigin="anonymous"></script>
   <script src="//cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/datepicker/1.0.10/datepicker.min.js" integrity="sha512-RCgrAvvoLpP7KVgTkTctrUdv7C6t7Un3p1iaoPr1++3pybCyCsCZZN7QEHMZTcJTmcJ7jzexTO+eFpHk4OCFAg==" crossorigin="anonymous"></script>
   <script src="/fridgebrain.js"></script>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/datepicker/1.0.10/datepicker.min.css" integrity="sha512-YdYyWQf8AS4WSB0WWdc3FbQ3Ypdm0QCWD2k4hgfqbQbRCJBEgX0iAegkl2S1Evma5ImaVXLBeUkIlP6hQ1eYKQ==" crossorigin="anonymous" />
 </head>
 
 <body>
@@ -40,8 +43,7 @@
 							<button type="button" style="float: right;" class="btn btn-primary produce-subtract">-</button>
 						
 						</div>
-          
-            
+
           </div>
           <div class="produce-new col-md-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
             <span class="produce-new-tile">+</span>
@@ -93,31 +95,32 @@
                 <input class="form-control" id="unitField" placeholder="Unit" style="width: 20%;">
               </div>
             </div>
-            <!-- <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1" onclick="myFunction()">
-          <label class="form-check-label" for="exampleCheck1">Perishable?</label>
+            <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="perishToggle" onclick="myFunction()">
+          <label class="form-check-label" >Perishable?</label>
         </div>
-        <div id="myDIV" style="display:none">
+        <div id="myDIV" style="visibility:hidden">
           <form>
             <div class="form-group">
-              <label for="exampleInputEmail1">Expiration date</label>
-              <input type="email" class="form-control" id="goodluckdoingthisonepaul" aria-describedby="emailHelp"
-                placeholder="ex 01/01/2020">
+              <label>Expiration date</label>
+              <input type="text" class="form-control" id="datepicker" placeholder="ex 01/01/2020" readonly="readonly">
+							<script>
+								$('#datepicker').datepicker();
+							</script>
             </div>
           </form>
         </div>
-        <script>
+        <script> 
           function myFunction() {
             var x = document.getElementById("myDIV");
-            if (x.style.display === "block") {
-              x.style.display = "none";
+            if (x.style.visibility === "visible") {
+              x.style.visibility = "hidden";
             } else {
-              x.style.display = "block";
+              x.style.visibility = "visible";
             }
           }
         </script>
         <div>
-        -->
             <div style="height: 25px;"></div>
             </row id="selectList" style="width:100%;">
             <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
@@ -479,7 +482,7 @@
                     number: Number($('#ammountField').val()),
                     unit: $('#unitField').val()
                   },
-                  // expiry_date: $(), good luck with this one
+                  expiry_date: document.getElementById('perishToggle').checked ? (new Date( $("#datepicker").datepicker( "getDate" ) )).getTime() /1000 : undefined,
                   icon: $('#foodicons option:selected').text().replace(' ', '-')
                 }
               }
@@ -487,8 +490,8 @@
               async function submitChanges() {
                 $.post('/i', getFormValues(), (result) => {
                   console.log(result);
-                  location.reload();
-                  // alert('submitted values');
+									if (result.error) alert(result.error);
+                  else location.reload();
                 });
                 $('#modalClose').click();
               }

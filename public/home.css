@@ -203,6 +203,19 @@
   top: 33px;
   white-space: nowrap;
   width: 261px;
+	height: 100%;
+}
+
+.home .eat-soon-list {
+  left: 800px;
+  letter-spacing: 0px;
+  line-height: 63.6px;
+  position: fixed;
+  text-align: center;
+  top: 100px;
+  white-space: nowrap;
+  width: 261px;
+	height: 100%;
 }
 .home .groceries {
   align-items: flex-end;

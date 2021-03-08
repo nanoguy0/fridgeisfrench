@@ -1,3 +1,4 @@
+
 function displayProduceList() {
   $.get("/i", function (json) {
     $.each(json.ingredients, function (idx, ingredient) {
@@ -6,6 +7,20 @@ function displayProduceList() {
   });
 }
 
+function displayProduceAtExpire() {
+	$.get("/i?from="+Date.now()/1000+"&to="+moment().add('1','week').valueOf()/1000, function (json) {
+		json.ingredients = json.ingredients.filter((i) => i.count.number != 0)
+		if (json.ingredients.length == 0) {
+			$('#emptyWarning').css('display', '');
+		} else {
+			$.each(json.ingredients, function (idx, ingredient) {
+					// if (ingredient.count.number == 0) return;
+					addProduce(ingredient.name, ingredient.icon, ingredient.count.number, ingredient.count.unit);
+			});
+	}
+    
+  });
+}
 
 function displayProduceAtZero() {
   $.get("/i?count=0", function (json) {
