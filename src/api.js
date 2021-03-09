@@ -1,4 +1,5 @@
 // This file manages all api resources
+const {reset, bright, underscore, cyan, red, yellow, green} = require('./features/colors');
 const express = require("express");
 const knex = require("knex")({
 	client: 'sqlite3',
@@ -14,7 +15,7 @@ require("./database")(knex);
 // create an express router
 var router = express.Router();
 
-const sendBadRequest = (error, res) => res.status(400).json({ error });
+const sendBadRequest = (error, res) => { console.log(`${yellow}Sending BAD REQUEST with error message: ${reset}${error}`); res.status(400).json({ error });}
 const sendErrorRequest = (error, res) => res.status(500).json({ error });
 
 router
@@ -25,6 +26,7 @@ router
    * @method GET
    */
   .get(async (req, res) => {
+		console.log(`Recieved ${bright}GET${reset} request from %s with query of ${green}%s${reset}`, req.ip, (req.url.split('?')[1] || '').split('&'));
     try {
       // Verify the validity of the parameters and format them
       if (
@@ -81,10 +83,11 @@ router
       });
 
       // send results
+			console.log(`${yellow}Responded with ${bright}%s${reset}${yellow} result(s).${reset}`, formatted.length);
       return res.json({ ingredients: formatted });
     } catch (error) {
       // send error message
-      console.log(`Recieved error with request to ${req.url}. Got: `, error);
+      console.log(`${red}${bright}Recieved error with request to ${req.url}. Got: ${reset}`, error);
       return sendErrorRequest(error.toString(), res);
     }
   })
@@ -95,6 +98,7 @@ router
    */
   .post(async (req, res) => {
     try {
+			console.log(`Recieved ${bright}POST${reset} request from %s with body of ${green}%s${reset}`, req.ip, Object.entries(req.body).map(d=>typeof d[1] == 'object' ? `${d[0]}=${JSON.stringify(d[1])}`: `${d[0]}=${d[1]}`));
       // Verify the validity of the parameters and format them
       if (!req.body) return sendBadRequest("Expected body", res);
       if (
@@ -164,6 +168,7 @@ router
         )[0];
       }
 
+			console.log(`${yellow}Updated/Added entry ${bright}${req.body.name}.${reset}`);
 			ingredient = (
         await knex("ingredients").select().where("name", "=", req.body.name)
       )[0];
@@ -182,7 +187,7 @@ router
       });
     } catch (error) {
       // send error message
-      console.log(`Recieved error with request to ${req.url}. Got: `, error);
+      console.log(`${red}${bright}Recieved error with request to ${req.url}. Got: ${reset}`, error);
       return sendErrorRequest(error.toString(), res);
     }
   })
@@ -193,6 +198,7 @@ router
    */
   .delete(async (req, res) => {
     try {
+			console.log(`Recieved ${bright}DELETE${reset} request from %s with query of ${green}%s${reset}`, req.ip, (req.url.split('?')[1] || '').split('&'));
 			// Setup and validate query params
 			if (
         !req.query.name ||
@@ -204,10 +210,11 @@ router
 
 			// delete from database
 			await knex('ingredients').delete().where('name', '=', req.query.name);
+			console.log(`${yellow}Deleted object with name of ${bright}${req.query.name}${reset}`);
 			res.json({error: null});
     } catch (error) {
       // send error message
-      console.log(`Recieved error with request to ${req.url}. Got: `, error);
+			console.log(`${red}${bright}Recieved error with request to ${req.url}. Got: ${reset}`, error);
       return sendErrorRequest(error.toString(), res);
     }
   });

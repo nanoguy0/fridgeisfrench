@@ -1,6 +1,9 @@
+const { green, reset, bright, underscore } = require('./src/features/colors');
+
 const http = require('http');
 const express = require('express');
 
+var port = 8080;
 var app = express();
 var server = http.createServer(app);
 
@@ -13,5 +16,5 @@ app.use(express.static('public'))
 
 app.get('/', (req, res) => res.redirect('/home.html'));
 
-server.listen(8080);
-console.log('Now listening for incoming connections');
+server.listen(port);
+console.log(`${bright}Now listening for incoming connections at ${green}${underscore}http://localhost:${port}${reset}.`);
