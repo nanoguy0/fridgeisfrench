@@ -12,6 +12,17 @@
   box-sizing: border-box;
 }
 
+.navigation {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  min-height: 298px;
+  position: fixed;
+  top: 151px;
+  width: 80px;
+}
+
 .navigation img {
   max-height: 45px;
   max-width: 45px;
@@ -21,13 +32,22 @@
 .navigation div {
   padding-top:24px;
   padding-bottom:24px;
+  margin-left: 10px;
+  width: 66px;
+  border-radius: 10px 0 0 10px;
 }
-.nav-home {
+
+.navigation div a {
+  display: inline-block;
+  width: 60px;
+  margin-left: 15px;
 }
-.nav-produce {
+
+.navigation div.selected {
+  background-color: #ECECEC;
+  opacity:1;
 }
-.nav-groceries {
-}
+
 
 
 .produce-list-area {
@@ -530,16 +550,7 @@
   padding: 0 6.4px;
   width: 63px;
 }
-.produce .navigation {
-  align-items: flex-start;
-  display: flex;
-  flex-direction: column;
-  left: 22px;
-  min-height: 298px;
-  position: fixed;
-  top: 151px;
-  width: 36px;
-}
+
 .produce .overlap-group {
   /* height: 337px; */
   left: 106px;
