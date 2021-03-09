@@ -1,4 +1,5 @@
 // This file is in charge of setting up the database enviornment.
+const colors = require('./features/colors');
 
 module.exports = async (knex) => {
 
@@ -17,5 +18,5 @@ module.exports = async (knex) => {
 
 	// do more tables here
 
-	console.log('database completed startup');
+	console.log(`${colors.white}${colors.bright}Database completed init.${colors.reset}\n`);
 }
