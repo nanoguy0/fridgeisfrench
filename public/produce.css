@@ -333,6 +333,7 @@
   width: 894px;
 }
 .produce .cover-bars {
+	pointer-events: none; 
   align-items: center;
   display: flex;
   flex-direction: column;
