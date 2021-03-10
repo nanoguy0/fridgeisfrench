@@ -8,11 +8,12 @@ var app = express();
 var server = http.createServer(app);
 
 // connect to express router
+app.use(express.static('public'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use('/', require('./src/api'));
-app.use(express.static('public'))
+
 
 app.get('/', (req, res) => res.redirect('/home.html'));
 
