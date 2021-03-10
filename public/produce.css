@@ -103,7 +103,9 @@
                                   supported by Chrome, Edge, Opera and Firefox */
 
 }
-
+body > div.modal-backdrop.fade.show{
+  z-index: 999999999;
+}
 .save:hover {
 	cursor: pointer;
 }
