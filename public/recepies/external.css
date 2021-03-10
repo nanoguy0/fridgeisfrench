@@ -13,6 +13,38 @@
 [id^=All_]
 {
 	    overflow: visible  !important;
+			z-index: 999999 !important;
+}
+
+/* <style>
+ 	#Tile {
+		position: fixed;
+		width: 782px;
+		max-height: 470px;
+		height: 2388px;
+		left: 131px;
+		top: 117px;
+		overflow-y: scroll !important;
+		overflow-x: hidden !important;
+		z-index: 9000;
+	}
+	[id^=Tile]:not(.Tile) {
+		position: fixed;
+		width: 782px;
+		max-height: 470px;
+		height: 2388px;
+		left: 131px;
+		top: 117px;
+		overflow-y: scroll !important;
+		overflow-x: hidden !important;
+		z-index: 9000;
+	}
+</style> */
+
+
+::-webkit-scrollbar {
+	width: 0;  /* Remove scrollbar space */
+	background: transparent;  /* Optional: just make scrollbar invisible */
 }
 
 :root {
@@ -65,6 +97,7 @@
 		box-sizing: border-box;
 		border: none;
 	}
+
 	#Recepies_-_All {
 		position: relative;
 		display: block;
@@ -119,14 +152,6 @@
 		height: 576px;
 		left: 75px;
 		top: 12px;
-	}
-	#Tile {
-		position: absolute;
-		width: 782px;
-		height: 2388px;
-		left: 131px;
-		top: 117px;
-		overflow: hidden;
 	}
 	#Tile_v {
 		position: absolute;
@@ -11049,31 +11074,43 @@
 		font-size: 45px;
 		color: rgba(0,0,0,1);
 	}
-	#Navigation {
-		position: absolute;
-		width: 36.031px;
-		height: 298.2px;
-		left: 21.969px;
-		top: 151px;
-		overflow: visible;
-	}
-	#Group_543 {
-		position: absolute;
-		width: 36.031px;
-		height: 298.2px;
-		left: 0px;
-		top: 0px;
-		overflow: visible;
-	}
-	#invoice {
-		opacity: 0.25;
-		position: absolute;
-		width: 36.031px;
-		height: 47.2px;
-		left: 0px;
-		top: 251px;
-		overflow: visible;
-	}
+	.navigation {
+		align-items: flex-start !important;
+		display: flex !important;
+		flex-direction: column !important;
+		left: 0 !important;
+		min-height: 298px !important;
+		position:	absolute !important;
+		top: 110px !important;
+		/* bottom: 440px !important; */
+		width: 80px !important;
+	  }
+	  
+	  .navigation img {
+		max-height: 45px !important;
+		max-width: 45px !important;
+		object-fit: fit !important; /* keep proportion */
+	  }
+	  
+	  .navigation div {
+		padding-top:24px !important;
+		padding-bottom:24px !important;
+		margin-left: 10px !important;
+		width: 66px !important;
+		border-radius: 10px 0 0 10px !important;
+	  }
+	  
+	  .navigation div a {
+		display: inline-block !important;
+		width: 60px !important;
+		margin-left: 15px !important;
+	  }
+	  
+	  .navigation div.selected {
+		background-color: #ECECEC !important;
+		opacity:1 !important;
+	  }
+	  
 	#Group_536 {
 		position: absolute;
 		width: 36.031px;
@@ -11275,7 +11312,7 @@
 		transform: matrix(1,0,0,1,0,0);
 	}
 	#groceries {
-		opacity: 0.25;
+		opacity: 1;
 		position: absolute;
 		width: 36.011px;
 		height: 45.911px;
@@ -11476,7 +11513,7 @@
 		transform: matrix(1,0,0,1,0,0);
 	}
 	#house {
-		opacity: 0.25;
+		opacity: 1;
 		position: absolute;
 		width: 36.011px;
 		height: 36.011px;

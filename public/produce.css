@@ -19,7 +19,7 @@
   left: 0;
   min-height: 298px;
   position: fixed;
-  top: 151px;
+  top: 110px;
   width: 80px;
 }
 
@@ -320,7 +320,7 @@
 .produce .cover-bar-white {
   background-color: white;
   border-radius: 32px;
-  height: 7px;
+  height:7px;
   margin-left: 42px;
   width: 916px;
 }
@@ -329,7 +329,7 @@
   border-radius: 32px;
   height: 7px;
   margin-left: 62px;
-  margin-top: 454px;
+  margin-top: 476px;
   width: 894px;
 }
 .produce .cover-bars {
