@@ -118,6 +118,23 @@ function populateDB() {
     saveProduce("pizza", "pizza", "2", "");
     saveProduce("cheese", "cheese", "0", "Lbs");
   });
-
 }
+
+function addLinktoTiles() {
+  $('[id^=Link_to_recipe]').bind( "click", function() {
+    var url = $(this).find("span").text();
+    $("iframe").show().attr("src", url);
+    $(".closeiframe").show();
+    $("#Filters").hide();
+  });
+
+  // close
+  $(".closeiframe").bind( "click", function() {
+    $(".closeiframe").hide();
+    $("iframe").hide();
+    $("#Filters").show();
+  });
+}
+
+
 
