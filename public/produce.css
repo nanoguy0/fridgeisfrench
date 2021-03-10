@@ -80,7 +80,7 @@
 .produce-tile.depleted {
   opacity: 0.33;
 }
-.datepicker-container {z-index:2000 !important;}
+.datepicker-container {z-index:9999999999 !important;}
 .produce-tile:not(.produce-edit) .produce-subtract {
 	transition: all 2s;
 	display: none !important;
