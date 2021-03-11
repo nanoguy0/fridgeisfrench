@@ -17,10 +17,14 @@
     integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
     crossorigin="anonymous"></script>
   <script src="//cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/datepicker/1.0.10/datepicker.min.js" integrity="sha512-RCgrAvvoLpP7KVgTkTctrUdv7C6t7Un3p1iaoPr1++3pybCyCsCZZN7QEHMZTcJTmcJ7jzexTO+eFpHk4OCFAg==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/datepicker/1.0.10/datepicker.min.js"
+    integrity="sha512-RCgrAvvoLpP7KVgTkTctrUdv7C6t7Un3p1iaoPr1++3pybCyCsCZZN7QEHMZTcJTmcJ7jzexTO+eFpHk4OCFAg=="
+    crossorigin="anonymous"></script>
   <script src="/fridgebrain.js"></script>
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/datepicker/1.0.10/datepicker.min.css" integrity="sha512-YdYyWQf8AS4WSB0WWdc3FbQ3Ypdm0QCWD2k4hgfqbQbRCJBEgX0iAegkl2S1Evma5ImaVXLBeUkIlP6hQ1eYKQ==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/datepicker/1.0.10/datepicker.min.css"
+    integrity="sha512-YdYyWQf8AS4WSB0WWdc3FbQ3Ypdm0QCWD2k4hgfqbQbRCJBEgX0iAegkl2S1Evma5ImaVXLBeUkIlP6hQ1eYKQ=="
+    crossorigin="anonymous" />
 </head>
 
 <body>
@@ -29,20 +33,21 @@
     <div class="second-bg"></div>
     <div class="inner-square"></div>
     <div class="produce-list-area">
-      <div class="container-fluid" style="overflow-y: scroll !important;overflow-x: hidden !important;max-height: 470px;z-index: 9000;position: absolute;bottom: 10px;">
+      <div class="container-fluid"
+        style="overflow-y: scroll !important;overflow-x: hidden !important;max-height: 470px;z-index: 9000;position: absolute;bottom: 10px;">
         <div class="produce-row row" style="margin-top: 30px;">
           <div class="produce-tile col-md-3">
-						<div class="produce-header" style="display: block; width:100% z; ">
-							<span class="produce-name" style=" width: 90%;float:left;">NAME</span>
-							<span class="produce-delete" style="float:left; width: 10%;">X</span>
-						</div>
-						<div class="produce-data" style="display: block;">  
-							<img class="produce-image"  src="assets/tomato.png"></img>
-							<span class="produce-count">0</span><span class="produce-unit">TONS</span>
-								<button type="button" style="float: right;" class="btn btn-primary produce-add">+</button>
-							<button type="button" style="float: right;" class="btn btn-primary produce-subtract">-</button>
-						
-						</div>
+            <div class="produce-header" style="display: block; width:100% z; ">
+              <span class="produce-name" style=" width: 90%;float:left;">NAME</span>
+              <span class="produce-delete" style="float:left; width: 10%;">X</span>
+            </div>
+            <div class="produce-data" style="display: block;">
+              <img class="produce-image" src="assets/tomato.png"></img>
+              <span class="produce-count">0</span><span class="produce-unit">TONS</span>
+              <button type="button" style="float: right;" class="btn btn-primary produce-add">+</button>
+              <button type="button" style="float: right;" class="btn btn-primary produce-subtract">-</button>
+
+            </div>
 
           </div>
           <div class="produce-new col-md-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -57,31 +62,32 @@
         <div class="cover-bar-grey"></div>
       </div>
     </div>
-      <div class="header"style="z-index: 9999999999999;">
-        <div class="overlap-group10">
-          <div class="header-1">
-            <h1 class="title bebasneue-normal-black-45px">PRODUCE</h1>
-            <!--<img class="separator" src="separator@1x.png" />-->
-          </div>
-          <div class="save calibri-bold-gray-40px" onclick="location.reload()">Save</div>
+    <div class="header" style="z-index: 9999999999999;">
+      <div class="overlap-group10">
+        <div class="header-1">
+          <h1 class="title bebasneue-normal-black-45px">PRODUCE</h1>
+          <!--<img class="separator" src="separator@1x.png" />-->
         </div>
+        <div class="save calibri-bold-gray-40px" onclick="location.reload()">Save</div>
+      </div>
       <div class="navigation" style="z-index:99999999">
         <div class="nav-home">
-          <a href="home.html"><img src="assets/nav-house.png"/></a>
+          <a href="home.html"><img src="assets/nav-house.png" /></a>
         </div>
         <div class="nav-produce selected">
-          <a href="produce.html"><img   src="assets/nav-bowl.png"/></a>
+          <a href="produce.html"><img src="assets/nav-bowl.png" /></a>
         </div>
         <div class="nav-recipes">
-          <a href="recepies\recipes.html"><img   src="assets/nav-recipes.png"/></a>
+          <a href="recepies\recipes.html"><img src="assets/nav-recipes.png" /></a>
         </div>
         <div class="nav-groceries">
-          <a href="groceries.html"><img   src="assets/nav-groceries.png"/></a>
+          <a href="groceries.html"><img src="assets/nav-groceries.png" /></a>
         </div>
       </div>
     </div>
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="z-index: 999999999999">
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+      style="z-index: 999999999999">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
@@ -98,417 +104,418 @@
               </div>
             </div>
             <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="perishToggle" onclick="myFunction()">
-          <label class="form-check-label" onclick="$('#perishToggle').click();">Perishable?</label>
-        </div>
-        <div id="myDIV" style="visibility:hidden">
-          <form>
-            <div class="form-group">
-              <label>Expiration date</label>
-              <input type="text" class="form-control" id="datepicker" placeholder="ex 01/01/2020" readonly="readonly">
-							<script>
-								$('#datepicker').datepicker();
-							</script>
+              <input type="checkbox" class="form-check-input" id="perishToggle" onclick="myFunction()">
+              <label class="form-check-label" onclick="$('#perishToggle').click();">Perishable?</label>
             </div>
-          </form>
-        </div>
-        <script> 
-          function myFunction() {
-            var x = document.getElementById("myDIV");
-            if (x.style.visibility === "visible") {
-              x.style.visibility = "hidden";
-            } else {
-              x.style.visibility = "visible";
-            }
-          }
-        </script>
-        <div>
-            <div style="height: 25px;"></div>
-            </row id="selectList" style="width:100%;">
-            <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-            <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-            <style>
-              .select2-container--default .select2-selection__rendered {
-                font-size: .9rem;
-                line-height: 1.5 !important;
-
-                padding: .375rem .75rem !important;
-
-                color: #3e4676 !important;
-              }
-
-              .select2-selection {
-                height: unset !important;
-
-                border-color: #d3e0e9 !important;
-              }
-
-              .select2-container--default .select2-selection--single .select2-selection__arrow {
-                position: absolute;
-                top: 50%;
-                right: 1px;
-
-                width: 20px;
-                height: unset;
-
-                transform: translateY(-100%);
-              }
-
-              .select2-container--default:focus {
-                color: #95aac9;
-                background-color: #fff;
-              }
-
-              .select2-dropdown {
-                border: 1px solid #d3e0e9;
-                box-shadow: 0 18px 35px rgba(50, 50, 93, .1), -1px 0 15px rgba(0, 0, 0, .07);
-              }
-
-              .select2-container--default .select2-results__option--highlighted[aria-selected] {
-                color: #262e4b;
-                background-color: #d2ddec;
-              }
-
-              .select2-container--default .select2-results__option[aria-selected=true] {
-                color: #687ae8;
-                background-color: #edf2f9;
-              }
-
-              .select2-container--default .select2-search--dropdown .select2-search__field {
-                width: 100%;
-                padding-left: 29px;
-
-                border: 0;
-                border: none;
-                outline: 0;
-                background-color: #edf2f9;
-              }
-
-              .select2-container .select2-selection--multiple .select2-selection__rendered {
-                font-size: 14px !important;
-
-                padding: 2px .375rem !important;
-              }
-
-              .select2-search--dropdown:before {
-                font-family: 'Material Design Icons';
-                font-size: 18px;
-
-                position: absolute;
-                top: 6px;
-                left: 10px;
-
-
-
-                color: #95aac9;
-              }
-
-              .select2-container--default .select2-selection--multiple .select2-selection__choice {
-                border: 1px solid transparent;
-                border-radius: 2px;
-                background-color: #e3ebf6;
-              }
-
-              .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
-                font-weight: 500;
-
-                color: #000;
-              }
-
-              .select2.is-invalid+.select2-container .select2-selection {
-                border-color: #f2545b !important;
-              }
-
-              .select2.is-valid+.select2-container .select2-selection {
-                border-color: #0c9 !important;
-              }
-            </style>
-            <select class="js-select2" name='icons' id='foodicons' style="width:70%;">
-              <option>apple 1</option>
-              <option>apple</option>
-              <option>asparagus</option>
-              <option>aubergine</option>
-              <option>avocado</option>
-              <option>bacon</option>
-              <option>baguette</option>
-              <option>banana</option>
-              <option>beans</option>
-              <option>biscuit</option>
-              <option>blueberries</option>
-              <option>boiled</option>
-              <option>bowl 1</option>
-              <option>bowl</option>
-              <option>bread 1</option>
-              <option>bread 2</option>
-              <option>bread</option>
-              <option>broccoli</option>
-              <option>butcher</option>
-              <option>butter</option>
-              <option>cabbage</option>
-              <option>cake</option>
-              <option>can 1</option>
-              <option>can 2</option>
-              <option>can</option>
-              <option>candy 1</option>
-              <option>candy</option>
-              <option>carrot</option>
-              <option>cauliflower</option>
-              <option>cereals</option>
-              <option>cheese 1</option>
-              <option>cheese</option>
-              <option>chef</option>
-              <option>cherries</option>
-              <option>chili</option>
-              <option>chips</option>
-              <option>chives</option>
-              <option>chocolate</option>
-              <option>coconut</option>
-              <option>coffee 1</option>
-              <option>coffee 2</option>
-              <option>coffee 3</option>
-              <option>coffee 4</option>
-              <option>coffee maker</option>
-              <option>coffee</option>
-              <option>cookies</option>
-              <option>corckscrew</option>
-              <option>corn</option>
-              <option>corndog</option>
-              <option>croissant</option>
-              <option>cucumber</option>
-              <option>cup</option>
-              <option>cupcake 1</option>
-              <option>cupcake 2</option>
-              <option>cupcake</option>
-              <option>cutlery</option>
-              <option>dairy</option>
-              <option>dish</option>
-              <option>dishes</option>
-              <option>doughnut 1</option>
-              <option>doughnut 2</option>
-              <option>doughnut</option>
-              <option>egg</option>
-              <option>eggs</option>
-              <option>fig</option>
-              <option>fish</option>
-              <option>flour 1</option>
-              <option>flour</option>
-              <option>food</option>
-              <option>fork</option>
-              <option>frappe</option>
-              <option>fries</option>
-              <option>garlic</option>
-              <option>gingerbread</option>
-              <option>glass 1</option>
-              <option>glass 2</option>
-              <option>glass 3</option>
-              <option>glass 4</option>
-              <option>glass 5</option>
-              <option>glass 6</option>
-              <option>glass</option>
-              <option>grain</option>
-              <option>grapes</option>
-              <option>grater</option>
-              <option>grinder</option>
-              <option>groceries</option>
-              <option>ham</option>
-              <option>hamburguer 1</option>
-              <option>hamburguer</option>
-              <option>hazelnut</option>
-              <option>honey 1</option>
-              <option>honey</option>
-              <option>hot dog-1</option>
-              <option>hot dog</option>
-              <option>ice cream-1</option>
-              <option>ice cream-10</option>
-              <option>ice cream-11</option>
-              <option>ice cream-12</option>
-              <option>ice cream-13</option>
-              <option>ice cream-14</option>
-              <option>ice cream-2</option>
-              <option>ice cream-3</option>
-              <option>ice cream-4</option>
-              <option>ice cream-5</option>
-              <option>ice cream-6</option>
-              <option>ice cream-7</option>
-              <option>ice cream-8</option>
-              <option>ice cream-9</option>
-              <option>ice cream</option>
-              <option>jam 1</option>
-              <option>jam</option>
-              <option>jawbreaker</option>
-              <option>jelly</option>
-              <option>kebab 1</option>
-              <option>kebab 2</option>
-              <option>kebab</option>
-              <option>kitchen</option>
-              <option>knife 1</option>
-              <option>knife 2</option>
-              <option>knife 3</option>
-              <option>knife</option>
-              <option>knives</option>
-              <option>ladle</option>
-              <option>lemon 1</option>
-              <option>lemon</option>
-              <option>lime</option>
-              <option>meat 1</option>
-              <option>meat 2</option>
-              <option>meat</option>
-              <option>milk 1</option>
-              <option>milk</option>
-              <option>mixer</option>
-              <option>mug</option>
-              <option>mushroom</option>
-              <option>mushrooms</option>
-              <option>mustard 1</option>
-              <option>mustard 2</option>
-              <option>mustard</option>
-              <option>noodles</option>
-              <option>oat</option>
-              <option>octopus</option>
-              <option>oil</option>
-              <option>olives</option>
-              <option>onion 1</option>
-              <option>onion</option>
-              <option>orange</option>
-              <option>ornating</option>
-              <option>pan</option>
-              <option>pancakes 1</option>
-              <option>pancakes</option>
-              <option>pasta 1</option>
-              <option>pasta</option>
-              <option>peach</option>
-              <option>pear</option>
-              <option>peas</option>
-              <option>pepper 1</option>
-              <option>pepper</option>
-              <option>pickles</option>
-              <option>pie 1</option>
-              <option>pie 2</option>
-              <option>pie</option>
-              <option>pineapple</option>
-              <option>pint</option>
-              <option>pistachio</option>
-              <option>pizza 1</option>
-              <option>pizza 2</option>
-              <option>pizza 3</option>
-              <option>pizza 4</option>
-              <option>pizza 5</option>
-              <option>pizza</option>
-              <option>pomegranate</option>
-              <option>popsicle</option>
-              <option>pot 1</option>
-              <option>pot 2</option>
-              <option>pot</option>
-              <option>potatoes 1</option>
-              <option>potatoes 2</option>
-              <option>potatoes</option>
-              <option>pretzel</option>
-              <option>pudding</option>
-              <option>pumpkin</option>
-              <option>radish</option>
-              <option>raspberry</option>
-              <option>rice</option>
-              <option>risotto</option>
-              <option>rolling pin</option>
-              <option>salad 1</option>
-              <option>salad</option>
-              <option>salami</option>
-              <option>salmon</option>
-              <option>salt</option>
-              <option>sandwich 1</option>
-              <option>sandwich</option>
-              <option>sausage</option>
-              <option>scale</option>
-              <option>seeds</option>
-              <option>shrimp</option>
-              <option>slotted spoon</option>
-              <option>sorbet</option>
-              <option>spaguetti</option>
-              <option>spatula 1</option>
-              <option>spatula</option>
-              <option>spices</option>
-              <option>spoon</option>
-              <option>steak</option>
-              <option>stew 1</option>
-              <option>stew</option>
-              <option>strainer</option>
-              <option>strawberry</option>
-              <option>sushi 1</option>
-              <option>sushi 2</option>
-              <option>sushi</option>
-              <option>taco</option>
-              <option>tea 1</option>
-              <option>tea</option>
-              <option>teapot 1</option>
-              <option>teapot</option>
-              <option>teaspoon</option>
-              <option>tenderizer</option>
-              <option>thermos</option>
-              <option>toast</option>
-              <option>toaster</option>
-              <option>toffee</option>
-              <option>tomato</option>
-              <option>turkey</option>
-              <option>water 1</option>
-              <option>water</option>
-              <option>watermelon</option>
-              <option>whisk</option>
-              <option>wrap</option>
-            </select>
+            <div id="myDIV" style="visibility:hidden">
+              <form>
+                <div class="form-group">
+                  <label>Expiration date</label>
+                  <input type="text" class="form-control" id="datepicker" placeholder="ex 01/01/2020"
+                    readonly="readonly">
+                  <script>
+                    $('#datepicker').datepicker();
+                  </script>
+                </div>
+              </form>
+            </div>
             <script>
-              // $.fn.modal.Constructor.prototype.enforceFocus = function() {};
-              $('#foodicons').select2({
-                dropdownParent: $('#exampleModal')
-              });
-              $('#foodicons').change(function () {
-                var file = $('#foodicons option:selected').text().replace(' ', '-') + '.png';
-                document.getElementById('iconpreview').innerHTML = `<img src='assets/${file}' style="width:50px; height:50px;">`;
-              });
-            </script>
-
-
-            <span id="iconpreview" style="width:20%; float:right; bottom: 15px; position:relative;"> <img
-                src='assets/apple-1.png' style="width:50px; height:50px;position:center;"> </span>
-
-            </row>
-            <div style="height:30px;"></div>
-          </div>
-          <div class="modal-footer">
-            <script>
-              // something for paul since he doesn't know how to do it
-              function getFormValues() {
-                return {
-                  name: $('#produceName').val(),
-                  count: {
-                    number: Number($('#ammountField').val()),
-                    unit: $('#unitField').val()
-                  },
-                  expiry_date: document.getElementById('perishToggle').checked ? (new Date( $("#datepicker").datepicker( "getDate" ) )).getTime() /1000 : undefined,
-                  icon: $('#foodicons option:selected').text().replace(' ', '-')
+              function myFunction() {
+                var x = document.getElementById("myDIV");
+                if (x.style.visibility === "visible") {
+                  x.style.visibility = "hidden";
+                } else {
+                  x.style.visibility = "visible";
                 }
               }
-
-              async function submitChanges() {
-                $.post('/i', getFormValues(), (result) => {
-                  console.log(result);
-									if (result.error) alert(result.error);
-                  else location.reload();
-                });
-                $('#modalClose').click();
-              }
-
             </script>
-            <button type="submit" class="btn btn-primary" onclick="submitChanges();">Save changes</button>
-            <button id="modalClose" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <div>
+              <div style="height: 25px;"></div>
+              </row id="selectList" style="width:100%;">
+              <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+              <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+              <style>
+                .select2-container--default .select2-selection__rendered {
+                  font-size: .9rem;
+                  line-height: 1.5 !important;
+
+                  padding: .375rem .75rem !important;
+
+                  color: #3e4676 !important;
+                }
+
+                .select2-selection {
+                  height: unset !important;
+
+                  border-color: #d3e0e9 !important;
+                }
+
+                .select2-container--default .select2-selection--single .select2-selection__arrow {
+                  position: absolute;
+                  top: 50%;
+                  right: 1px;
+
+                  width: 20px;
+                  height: unset;
+
+                  transform: translateY(-100%);
+                }
+
+                .select2-container--default:focus {
+                  color: #95aac9;
+                  background-color: #fff;
+                }
+
+                .select2-dropdown {
+                  border: 1px solid #d3e0e9;
+                  box-shadow: 0 18px 35px rgba(50, 50, 93, .1), -1px 0 15px rgba(0, 0, 0, .07);
+                }
+
+                .select2-container--default .select2-results__option--highlighted[aria-selected] {
+                  color: #262e4b;
+                  background-color: #d2ddec;
+                }
+
+                .select2-container--default .select2-results__option[aria-selected=true] {
+                  color: #687ae8;
+                  background-color: #edf2f9;
+                }
+
+                .select2-container--default .select2-search--dropdown .select2-search__field {
+                  width: 100%;
+                  padding-left: 29px;
+
+                  border: 0;
+                  border: none;
+                  outline: 0;
+                  background-color: #edf2f9;
+                }
+
+                .select2-container .select2-selection--multiple .select2-selection__rendered {
+                  font-size: 14px !important;
+
+                  padding: 2px .375rem !important;
+                }
+
+                .select2-search--dropdown:before {
+                  font-family: 'Material Design Icons';
+                  font-size: 18px;
+
+                  position: absolute;
+                  top: 6px;
+                  left: 10px;
+
+
+
+                  color: #95aac9;
+                }
+
+                .select2-container--default .select2-selection--multiple .select2-selection__choice {
+                  border: 1px solid transparent;
+                  border-radius: 2px;
+                  background-color: #e3ebf6;
+                }
+
+                .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+                  font-weight: 500;
+
+                  color: #000;
+                }
+
+                .select2.is-invalid+.select2-container .select2-selection {
+                  border-color: #f2545b !important;
+                }
+
+                .select2.is-valid+.select2-container .select2-selection {
+                  border-color: #0c9 !important;
+                }
+              </style>
+              <select class="js-select2" name='icons' id='foodicons' style="width:70%;">
+                <option>apple 1</option>
+                <option>apple</option>
+                <option>asparagus</option>
+                <option>aubergine</option>
+                <option>avocado</option>
+                <option>bacon</option>
+                <option>baguette</option>
+                <option>banana</option>
+                <option>beans</option>
+                <option>biscuit</option>
+                <option>blueberries</option>
+                <option>boiled</option>
+                <option>bowl 1</option>
+                <option>bowl</option>
+                <option>bread 1</option>
+                <option>bread 2</option>
+                <option>bread</option>
+                <option>broccoli</option>
+                <option>butcher</option>
+                <option>butter</option>
+                <option>cabbage</option>
+                <option>cake</option>
+                <option>can 1</option>
+                <option>can 2</option>
+                <option>can</option>
+                <option>candy 1</option>
+                <option>candy</option>
+                <option>carrot</option>
+                <option>cauliflower</option>
+                <option>cereals</option>
+                <option>cheese 1</option>
+                <option>cheese</option>
+                <option>chef</option>
+                <option>cherries</option>
+                <option>chili</option>
+                <option>chips</option>
+                <option>chives</option>
+                <option>chocolate</option>
+                <option>coconut</option>
+                <option>coffee 1</option>
+                <option>coffee 2</option>
+                <option>coffee 3</option>
+                <option>coffee 4</option>
+                <option>coffee maker</option>
+                <option>coffee</option>
+                <option>cookies</option>
+                <option>corckscrew</option>
+                <option>corn</option>
+                <option>corndog</option>
+                <option>croissant</option>
+                <option>cucumber</option>
+                <option>cup</option>
+                <option>cupcake 1</option>
+                <option>cupcake 2</option>
+                <option>cupcake</option>
+                <option>cutlery</option>
+                <option>dairy</option>
+                <option>dish</option>
+                <option>dishes</option>
+                <option>doughnut 1</option>
+                <option>doughnut 2</option>
+                <option>doughnut</option>
+                <option>egg</option>
+                <option>eggs</option>
+                <option>fig</option>
+                <option>fish</option>
+                <option>flour 1</option>
+                <option>flour</option>
+                <option>food</option>
+                <option>fork</option>
+                <option>frappe</option>
+                <option>fries</option>
+                <option>garlic</option>
+                <option>gingerbread</option>
+                <option>glass 1</option>
+                <option>glass 2</option>
+                <option>glass 3</option>
+                <option>glass 4</option>
+                <option>glass 5</option>
+                <option>glass 6</option>
+                <option>glass</option>
+                <option>grain</option>
+                <option>grapes</option>
+                <option>grater</option>
+                <option>grinder</option>
+                <option>groceries</option>
+                <option>ham</option>
+                <option>hamburguer 1</option>
+                <option>hamburguer</option>
+                <option>hazelnut</option>
+                <option>honey 1</option>
+                <option>honey</option>
+                <option>hot dog-1</option>
+                <option>hot dog</option>
+                <option>ice cream-1</option>
+                <option>ice cream-10</option>
+                <option>ice cream-11</option>
+                <option>ice cream-12</option>
+                <option>ice cream-13</option>
+                <option>ice cream-14</option>
+                <option>ice cream-2</option>
+                <option>ice cream-3</option>
+                <option>ice cream-4</option>
+                <option>ice cream-5</option>
+                <option>ice cream-6</option>
+                <option>ice cream-7</option>
+                <option>ice cream-8</option>
+                <option>ice cream-9</option>
+                <option>ice cream</option>
+                <option>jam 1</option>
+                <option>jam</option>
+                <option>jawbreaker</option>
+                <option>jelly</option>
+                <option>kebab 1</option>
+                <option>kebab 2</option>
+                <option>kebab</option>
+                <option>kitchen</option>
+                <option>knife 1</option>
+                <option>knife 2</option>
+                <option>knife 3</option>
+                <option>knife</option>
+                <option>knives</option>
+                <option>ladle</option>
+                <option>lemon 1</option>
+                <option>lemon</option>
+                <option>lime</option>
+                <option>meat 1</option>
+                <option>meat 2</option>
+                <option>meat</option>
+                <option>milk 1</option>
+                <option>milk</option>
+                <option>mixer</option>
+                <option>mug</option>
+                <option>mushroom</option>
+                <option>mushrooms</option>
+                <option>mustard 1</option>
+                <option>mustard 2</option>
+                <option>mustard</option>
+                <option>noodles</option>
+                <option>oat</option>
+                <option>octopus</option>
+                <option>oil</option>
+                <option>olives</option>
+                <option>onion 1</option>
+                <option>onion</option>
+                <option>orange</option>
+                <option>ornating</option>
+                <option>pan</option>
+                <option>pancakes 1</option>
+                <option>pancakes</option>
+                <option>pasta 1</option>
+                <option>pasta</option>
+                <option>peach</option>
+                <option>pear</option>
+                <option>peas</option>
+                <option>pepper 1</option>
+                <option>pepper</option>
+                <option>pickles</option>
+                <option>pie 1</option>
+                <option>pie 2</option>
+                <option>pie</option>
+                <option>pineapple</option>
+                <option>pint</option>
+                <option>pistachio</option>
+                <option>pizza 1</option>
+                <option>pizza 2</option>
+                <option>pizza 3</option>
+                <option>pizza 4</option>
+                <option>pizza 5</option>
+                <option>pizza</option>
+                <option>pomegranate</option>
+                <option>popsicle</option>
+                <option>pot 1</option>
+                <option>pot 2</option>
+                <option>pot</option>
+                <option>potatoes 1</option>
+                <option>potatoes 2</option>
+                <option>potatoes</option>
+                <option>pretzel</option>
+                <option>pudding</option>
+                <option>pumpkin</option>
+                <option>radish</option>
+                <option>raspberry</option>
+                <option>rice</option>
+                <option>risotto</option>
+                <option>rolling pin</option>
+                <option>salad 1</option>
+                <option>salad</option>
+                <option>salami</option>
+                <option>salmon</option>
+                <option>salt</option>
+                <option>sandwich 1</option>
+                <option>sandwich</option>
+                <option>sausage</option>
+                <option>scale</option>
+                <option>seeds</option>
+                <option>shrimp</option>
+                <option>slotted spoon</option>
+                <option>sorbet</option>
+                <option>spaguetti</option>
+                <option>spatula 1</option>
+                <option>spatula</option>
+                <option>spices</option>
+                <option>spoon</option>
+                <option>steak</option>
+                <option>stew 1</option>
+                <option>stew</option>
+                <option>strainer</option>
+                <option>strawberry</option>
+                <option>sushi 1</option>
+                <option>sushi 2</option>
+                <option>sushi</option>
+                <option>taco</option>
+                <option>tea 1</option>
+                <option>tea</option>
+                <option>teapot 1</option>
+                <option>teapot</option>
+                <option>teaspoon</option>
+                <option>tenderizer</option>
+                <option>thermos</option>
+                <option>toast</option>
+                <option>toaster</option>
+                <option>toffee</option>
+                <option>tomato</option>
+                <option>turkey</option>
+                <option>water 1</option>
+                <option>water</option>
+                <option>watermelon</option>
+                <option>whisk</option>
+                <option>wrap</option>
+              </select>
+              <script>
+                // $.fn.modal.Constructor.prototype.enforceFocus = function() {};
+                $('#foodicons').select2({
+                  dropdownParent: $('#exampleModal')
+                });
+                $('#foodicons').change(function () {
+                  var file = $('#foodicons option:selected').text().replace(' ', '-') + '.png';
+                  document.getElementById('iconpreview').innerHTML = `<img src='assets/${file}' style="width:50px; height:50px;">`;
+                });
+              </script>
+
+
+              <span id="iconpreview" style="width:20%; float:right; bottom: 15px; position:relative;"> <img
+                  src='assets/apple-1.png' style="width:50px; height:50px;position:center;"> </span>
+
+              </row>
+              <div style="height:30px;"></div>
+            </div>
+            <div class="modal-footer">
+              <script>
+                // something for paul since he doesn't know how to do it
+                function getFormValues() {
+                  return {
+                    name: $('#produceName').val(),
+                    count: {
+                      number: Number($('#ammountField').val()),
+                      unit: $('#unitField').val()
+                    },
+                    expiry_date: document.getElementById('perishToggle').checked ? (new Date($("#datepicker").datepicker("getDate"))).getTime() / 1000 : undefined,
+                    icon: $('#foodicons option:selected').text().replace(' ', '-')
+                  }
+                }
+
+                async function submitChanges() {
+                  $.post('/i', getFormValues(), (result) => {
+                    console.log(result);
+                    if (result.error) alert(result.error);
+                    else location.reload();
+                  });
+                  $('#modalClose').click();
+                }
+
+              </script>
+              <button type="submit" class="btn btn-primary" onclick="submitChanges();">Save changes</button>
+              <button id="modalClose" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <script>
-      populateDB();
-      displayProduceList();
-    </script>
+      <script>
+        populateDB();
+        displayProduceList();
+      </script>
 </body>
 
 </html>
